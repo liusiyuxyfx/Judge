@@ -24,5 +24,3 @@ cookie = driver.get_cookies()
 jsonCookies = json.dumps(cookie)
 with open('mooccookie.json', 'w') as f:
     f.write(jsonCookies)
-
-driver.close()
