@@ -37,5 +37,3 @@ def LoginAndSaveCookie():
         driver.close()
         print("Login failed")
         return False
-
-LoginAndSaveCookie()

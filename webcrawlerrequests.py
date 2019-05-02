@@ -1,55 +1,24 @@
 import requests
 import weboptions
 import dataclean
+import re
+import json
 import time
+import webcrawlerlogin
 from collections import defaultdict
 from selenium import webdriver
 from bs4 import BeautifulSoup
-testurl = 'https://www.icourse163.org/spoc/learn/COMPUTER-1002235015?tid=1002353031&_trace_c_p_k2_=7b969657396a44d8941e666e083563d1#/learn/forumdetail?pid=1004204387'
+testurl = 'https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=257bbfbe544a419287bcd565be2f8ad2#/learn/forumdetail?pid=1005085805'
 
-def getPageNumber(url):
-    # 注入cookie
-    driver = webdriver.Chrome(chrome_options=weboptions.Chrome_headless())
-    driver.get('https://www.icourse163.org/member/login.htm#/webLoginIndex')
-    time.sleep(20)
-    print("删除cookies")
-    try:
-        driver.delete_all_cookies()
-    except:
-        print("失败")
-    print("删除成功")
-    listCookies = weboptions.getCookies()
-    print('获取列表成功')
-    for item in listCookies:
-        driver.add_cookie(item)
-    # 首次获取页面
-    print("注入cookies成功")
-    driver.get(url)
-    print('正在访问页面')
-    time.sleep(2)
-    print('正在解析')
-    pages = driver.find_elements_by_xpath('//*[@id="courseLearn-inner-box"]/div/div[2]/div/div[4]/div/div[1]/div[2]/div[1]/*')
-    cnt = -2
-    pagenumber = ''
-    print("页面加载完成，正在读取页数")
-    while cnt > -10:
-        pagenumber = pages[cnt].get_attribute("innerText")
-        if pagenumber == '':
-            cnt-=1
-        else:
-            break
-
-    print (pagenumber,type(pagenumber))
-    driver.close()
-    return int(pagenumber)
 
 def getData(url):
+    #webcrawlerlogin.LoginAndSaveCookie()
+
     datadict = defaultdict(list)
     mainPage = 'https://www.icourse163.org/member/login.htm#/webLoginIndex'
     domainurl = 'https://www.icourse163.org/dwr/call/plaincall/PostBean.getPaginationReplys.dwr'
 
     pid = url.split('=')[-1]
-    pagenumber = getPageNumber(url)
     #初始化数据
     listCookies = weboptions.getCookies()
     answerdict = defaultdict(list)
@@ -61,12 +30,26 @@ def getData(url):
         cookies[cookie['name']]=cookie['value']
         if cookie['name'] == "NTESSTUDYSI":
             httpsessionID = cookie['value']
+
+    #获取页数
+    pagehtml = requests.post(domainurl, data=weboptions.getPrivate(httpsessionID, pid, 1),
+                         headers=weboptions.getHeaders(url), cookies=cookies, timeout=None)
+    pagenumber=int(re.search(r'totalPageCount:(\d+)',pagehtml.text).group(1))
+
     for i in range (pagenumber):
         html = requests.post(domainurl, data=weboptions.getPrivate(httpsessionID, pid, i+1), headers=weboptions.getHeaders(url), cookies=cookies, timeout=None)
         print('================================')
         print('正在解析第 %d 页，共 %d 页'% (i+1, pagenumber))
         datadict = dict(dataclean.getCleandict(html.text), **datadict)
-    print(datadict)
+        time.sleep(2)
+    with open('test.json', 'w') as file:
+        json.dump(datadict, file)
+    with open('test.json', 'r') as file:
+        print(json.load( file))
+    file.close()  # 关闭文件
+    #print(json.dumps(datadict, ensure_ascii=True))
+    print('===================================')
+    print('共统计出 %d 位学生答案' % len(datadict))
     return datadict
 
-getData('https://www.icourse163.org/spoc/learn/HRBCU-362005?tid=419007&_trace_c_p_k2_=bcca62dee7a340d7b4cecbb9237eb475#/learn/forumdetail?pid=996042')
+getData('https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=257bbfbe544a419287bcd565be2f8ad2#/learn/forumdetail?pid=1005085805')
