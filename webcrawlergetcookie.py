@@ -5,15 +5,14 @@
 import json
 import string
 import requests
+import weboptions
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from collections import defaultdict
 import time
 from lxml import etree
 
-
-with open('mooccookie.json','r',encoding='utf-8') as f:
-    listCookies=json.loads(f.read())
+listCookies = weboptions.getCookies()
 
 url = 'https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=7fbdf498494f4412bd9f3cc97483253d#/learn/forumdetail?pid=1005195052'
 
