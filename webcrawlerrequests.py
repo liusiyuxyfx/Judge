@@ -42,14 +42,13 @@ def getData(url):
         print('正在解析第 %d 页，共 %d 页'% (i+1, pagenumber))
         datadict = dict(dataclean.getCleandict(html.text), **datadict)
         time.sleep(2)
-    with open('test.json', 'w') as file:
+    print('================================')
+    with open('answers.json', 'w') as file:
         json.dump(datadict, file)
-    with open('test.json', 'r') as file:
-        print(json.load( file))
+    print('文件保存成功 answers.json')
     file.close()  # 关闭文件
     #print(json.dumps(datadict, ensure_ascii=True))
     print('===================================')
     print('共统计出 %d 位学生答案' % len(datadict))
-    return datadict
 
 getData('https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=257bbfbe544a419287bcd565be2f8ad2#/learn/forumdetail?pid=1005085805')
