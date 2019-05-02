@@ -21,39 +21,25 @@ def getCookies():
 def getHeaders(url):
     header= {
         #'cookie': getCookies(),
+        'accept-encoding':'gzip, deflate, br',
+        'accept-language':'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
         'content-type':'text/plain',
         'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
-        'referer':url
+        #'referer':url
     }
     return header
-
-# def getPrivate(httpsessionid, pid, page):
-#     privates = {
-#         'callCount': 1,
-#         'scriptSessionId':'${scriptSessionId}190',
-#         'httpSessionId':httpsessionid,
-#         'c0-scriptName':'PostBean',
-#         'c0-methodName':'getPaginationReplys',
-#         'c0-id': 0,
-#         'c0 - param0': pid,
-#         'c0 - param1': 2,
-#         'c0-param2':page,
-#         'batchId': 1556765326144
-#     }
-#     return privates
-
 
 def getPrivate(httpsessionid, pid, page):
     privates = {
         'callCount': 1,
-        'scriptSessionId':'${scriptSessionId}190',
+        'scriptSessionId':'${scriptSessionId}' + str(random.randint(0, 200)),
         'httpSessionId':httpsessionid,
         'c0-scriptName':'PostBean',
         'c0-methodName':'getPaginationReplys',
         'c0-id': 0,
-        'c0 - param0': 'number:' + str(pid),
-        'c0 - param1': 'number:2',
-        'c0-param2':'number:'+ str(page),
-        'batchId': 1556765326144
+        'c0-param0': pid,
+        'c0-param1': 2,
+        'c0-param2': page,
+        'batchId': random.randint(1000000000000, 20000000000000)
     }
     return privates
