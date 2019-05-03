@@ -16,14 +16,10 @@ def getData(url):
     pid = url.split('=')[-1]
     httpsessionID = ""
     datadict = defaultdict(list)
+    cookies = {}
 
     #获取cookies和httpsessionID,httpsessionID为cookies['NTESSTUDYSI"]
-    listCookies = weboptions.getCookies()
-    cookies={}
-    for cookie in listCookies:
-        cookies[cookie['name']]=cookie['value']
-        if cookie['name'] == "NTESSTUDYSI":
-            httpsessionID = cookie['value']
+    cookies, httpsessionID = weboptions.getCookiesAndSessionID()
 
     #获取页数
     pagehtml = requests.post(domainurl, data=weboptions.getPayloads(httpsessionID, pid, 1),
@@ -42,14 +38,11 @@ def getData(url):
             webcrawlerlogin.LoginAndSaveCookie()
             listCookies = weboptions.getCookies()
             cookies.clear()
-            for cookie in listCookies:
-                cookies[cookie['name']] = cookie['value']
-                if cookie['name'] == "NTESSTUDYSI":
-                    httpsessionID = cookie['value']
+            cookies, httpsessionID = weboptions.getCookiesAndSessionID()
         finally:
             time.sleep(2)
     print('================================')
-    with open('answers.json', 'w') as file:
+    with open(weboptions.getCachePath('answers'), 'w') as file:
         json.dump(datadict, file)
     print('文件保存成功 answers.json')
     #print(json.dumps(datadict, ensure_ascii=True))

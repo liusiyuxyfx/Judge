@@ -14,9 +14,22 @@ def Chrome_headless():
     chrome_options.add_argument('--headless')  # 浏览器不提供可视化页面. linux下如果系统不支持可视化不加这条会启动失败
     return chrome_options
 
-def getCookies():
-    cookies = pickle.load(open("moocCookies.pkl", "rb"))
-    return cookies
+def getCachePath(str):
+    if str == 'answers':
+        return './cachefiles/answers.json'
+    elif str == 'cookies':
+        return './cachefiles/moocCookies.pkl'
+
+
+def getCookiesAndSessionID():
+    cookies = {}
+    httpsessionID = ''
+    listCookies = pickle.load(open(getCachePath('cookies'), "rb"))
+    for cookie in listCookies:
+        cookies[cookie['name']] = cookie['value']
+        if cookie['name'] == "NTESSTUDYSI":
+            httpsessionID = cookie['value']
+    return cookies, httpsessionID
 
 def getHeaders(url):
     header= {

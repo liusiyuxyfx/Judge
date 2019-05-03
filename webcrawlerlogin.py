@@ -30,7 +30,7 @@ def LoginAndSaveCookie():
         length = driver.find_element_by_class_name("exit")
         if length != 0:
             print('Login success')
-            pickle.dump(driver.get_cookies(), open("moocCookies.pkl", "wb"))
+            pickle.dump(driver.get_cookies(), open(weboptions.getCachePath('cookies'), "wb"))
             driver.close()
             return True
     except:
