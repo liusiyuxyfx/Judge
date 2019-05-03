@@ -37,3 +37,6 @@ def LoginAndSaveCookie():
         driver.close()
         print("Login failed")
         return False
+
+if __name__ == '__main__':
+    LoginAndSaveCookie()

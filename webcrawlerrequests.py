@@ -6,25 +6,19 @@ import json
 import time
 import webcrawlerlogin
 from collections import defaultdict
-from selenium import webdriver
-from bs4 import BeautifulSoup
-testurl = 'https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=257bbfbe544a419287bcd565be2f8ad2#/learn/forumdetail?pid=1005085805'
-
 
 def getData(url):
     #webcrawlerlogin.LoginAndSaveCookie()
-
-    datadict = defaultdict(list)
     mainPage = 'https://www.icourse163.org/member/login.htm#/webLoginIndex'
     domainurl = 'https://www.icourse163.org/dwr/call/plaincall/PostBean.getPaginationReplys.dwr'
 
+    #数据初始化
     pid = url.split('=')[-1]
-    #初始化数据
-    listCookies = weboptions.getCookies()
-    answerdict = defaultdict(list)
     httpsessionID = ""
+    datadict = defaultdict(list)
 
     #获取cookies和httpsessionID,httpsessionID为cookies['NTESSTUDYSI"]
+    listCookies = weboptions.getCookies()
     cookies={}
     for cookie in listCookies:
         cookies[cookie['name']]=cookie['value']
@@ -32,23 +26,36 @@ def getData(url):
             httpsessionID = cookie['value']
 
     #获取页数
-    pagehtml = requests.post(domainurl, data=weboptions.getPrivate(httpsessionID, pid, 1),
+    pagehtml = requests.post(domainurl, data=weboptions.getPayloads(httpsessionID, pid, 1),
                          headers=weboptions.getHeaders(url), cookies=cookies, timeout=None)
     pagenumber=int(re.search(r'totalPageCount:(\d+)',pagehtml.text).group(1))
 
     for i in range (pagenumber):
-        html = requests.post(domainurl, data=weboptions.getPrivate(httpsessionID, pid, i+1), headers=weboptions.getHeaders(url), cookies=cookies, timeout=None)
-        print('================================')
-        print('正在解析第 %d 页，共 %d 页'% (i+1, pagenumber))
-        datadict = dict(dataclean.getCleandict(html.text), **datadict)
-        time.sleep(2)
+        try:
+            html = requests.post(domainurl, data=weboptions.getPayloads(httpsessionID, pid, i+1),
+                                 headers=weboptions.getHeaders(url), cookies=cookies, timeout=None)
+            print('================================')
+            print('正在解析第 %d 页，共 %d 页'% (i+1, pagenumber))
+            datadict = dict(dataclean.getCleandict(html.text), **datadict)#合并字典，以后面字典为基准，如新字典中key值已在原字典中，不更新
+        except:
+            i -= 1
+            webcrawlerlogin.LoginAndSaveCookie()
+            listCookies = weboptions.getCookies()
+            cookies.clear()
+            for cookie in listCookies:
+                cookies[cookie['name']] = cookie['value']
+                if cookie['name'] == "NTESSTUDYSI":
+                    httpsessionID = cookie['value']
+        finally:
+            time.sleep(2)
     print('================================')
     with open('answers.json', 'w') as file:
         json.dump(datadict, file)
     print('文件保存成功 answers.json')
-    file.close()  # 关闭文件
     #print(json.dumps(datadict, ensure_ascii=True))
     print('===================================')
     print('共统计出 %d 位学生答案' % len(datadict))
 
-getData('https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=257bbfbe544a419287bcd565be2f8ad2#/learn/forumdetail?pid=1005085805')
+if __name__ == '__main__':
+    #webcrawlerlogin.LoginAndSaveCookie()
+    getData('https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=257bbfbe544a419287bcd565be2f8ad2#/learn/forumdetail?pid=1005085805')

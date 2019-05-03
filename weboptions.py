@@ -29,8 +29,8 @@ def getHeaders(url):
     }
     return header
 
-def getPrivate(httpsessionid, pid, page):
-    privates = {
+def getPayloads(httpsessionid, pid, page):
+    payloads = {
         'callCount': 1,
         'scriptSessionId':'${scriptSessionId}' + str(random.randint(0, 200)),
         'httpSessionId':httpsessionid,
@@ -42,4 +42,4 @@ def getPrivate(httpsessionid, pid, page):
         'c0-param2': page,
         'batchId': random.randint(1000000000000, 20000000000000)
     }
-    return privates
+    return payloads
