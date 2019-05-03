@@ -8,7 +8,7 @@ import webcrawlerlogin
 from collections import defaultdict
 
 def getData(url):
-    #webcrawlerlogin.LoginAndSaveCookie()
+    webcrawlerlogin.LoginAndSaveCookie()
     mainPage = 'https://www.icourse163.org/member/login.htm#/webLoginIndex'
     domainurl = 'https://www.icourse163.org/dwr/call/plaincall/PostBean.getPaginationReplys.dwr'
 

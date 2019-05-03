@@ -6,7 +6,7 @@ from selenium import webdriver
 
 
 def LoginAndSaveCookie():
-
+    print("正在登陆，请稍后")
     url = 'https://www.icourse163.org/member/login.htm#/webLoginIndex'
     driver=webdriver.Chrome(chrome_options=weboptions.Chrome_headless())
     driver.get(url)
@@ -29,13 +29,13 @@ def LoginAndSaveCookie():
     try:
         length = driver.find_element_by_class_name("exit")
         if length != 0:
-            print('Login success')
+            print('登陆成功')
             pickle.dump(driver.get_cookies(), open(weboptions.getCachePath('cookies'), "wb"))
             driver.close()
             return True
     except:
         driver.close()
-        print("Login failed")
+        print("登录失败")
         return False
 
 if __name__ == '__main__':
