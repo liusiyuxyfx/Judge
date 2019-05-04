@@ -7,8 +7,8 @@ import time
 import webcrawlerlogin
 from collections import defaultdict
 
-def getData(url):
-    webcrawlerlogin.LoginAndSaveCookie()
+def getData(url, name, password):
+    webcrawlerlogin.LoginAndSaveCookie(name, password)
     mainPage = 'https://www.icourse163.org/member/login.htm#/webLoginIndex'
     domainurl = 'https://www.icourse163.org/dwr/call/plaincall/PostBean.getPaginationReplys.dwr'
 
@@ -35,7 +35,7 @@ def getData(url):
             datadict = dict(dataclean.getCleandict(html.text), **datadict)#合并字典，以后面字典为基准，如新字典中key值已在原字典中，不更新
         except:
             i -= 1
-            webcrawlerlogin.LoginAndSaveCookie()
+            webcrawlerlogin.LoginAndSaveCookie(name, password)
             listCookies = weboptions.getCookies()
             cookies.clear()
             cookies, httpsessionID = weboptions.getCookiesAndSessionID()
