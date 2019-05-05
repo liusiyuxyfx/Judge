@@ -1,6 +1,16 @@
 import re
 from collections import defaultdict
 
+def getQuestions(str):
+    pat = re.compile('<[^>]*>')
+    segstr = re.sub(pat, '', str)
+    segstr = re.search(r'{activeFlag.*}', segstr).group()
+    question = ''.join(re.search(r'title:"(.*?)"', segstr).group(1))
+    content = ''.join(re.search(r'content:"(.*?)"', segstr).group(1))
+    return question.encode('utf-8').decode('unicode_escape').encode('gbk', 'ignore').decode(
+            'gbk', 'ignore'), content.encode('utf-8').decode('unicode_escape').encode('gbk', 'ignore').decode(
+            'gbk', 'ignore')
+
 def getCleandict(str):
     dict=defaultdict(list)
     str = re.sub(r'<.*?>','',str)

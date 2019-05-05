@@ -3,8 +3,8 @@ import jieba
 import json
 import tfidf
 import weboptions
-import numpy as np
 from collections import defaultdict
+#import showtime
 
 def getSegString(sentence):
     segpart = jieba.cut(sentence, cut_all=False)  # 分词
@@ -34,12 +34,14 @@ def getScoreDict(answerdict, standardAnswer):
     cnt = 1
     for key, value in answerdict.items():
         score = tfidf.getCosine(weight[0], weight[cnt])
-        score = round(score/fullscore, 4) * 100
-        if score > 100: print("---------------warning-----------------")
-        scoresdict[key].append(score)
+        score = round(score/fullscore, 2) * 100
+        scoresdict[key].append(int(score))
         scoresdict[key].append(value[1])
+        scoresdict[key].append(value[0])
         cnt += 1
-    return(scoresdict)
+    return scoresdict, seganswersdoc
+#scoredict结构{key = nickname, value=[score, realname, answer)}
+#seganswerdoc结构{key = nickname, value=[realname, answer])
 
 def getStopworddict():
     stopwords = {}
@@ -57,10 +59,11 @@ def readAnswersdoc():
 def calculate(standardAnswer):
     global stopworddict
     stopworddict = getStopworddict()
-    return getScoreDict(readAnswersdoc(), standardAnswer)
-
-
-
+    scoredict , seganswerdoc = getScoreDict(readAnswersdoc(), standardAnswer)
+    #showtime.getWordCloud(''.join(seganswerdoc))
+    return scoredict, seganswerdoc
 
 if __name__ == '__main__':
-    print (calculate())
+    scoredict, seganswerdoc = calculate("""互联网思维，就是在（移动）互联网、大数据、云计算等科技不断发展的背景下，对市场、对用户、对产品、对企业价值链乃至对整个商业生态的进行重新审视的思考方式。最早提出互联网思维的是百度公司创始人李彦宏。在百度的一个大型活动上，李彦宏与传统产业的老板、企业家探讨发展问题时，李彦宏首次提到“互联网思维”这个词。他说，我们这些企业家们今后要有互联网思维，可能你做的事情不是互联网，但你的思维方式要逐渐像互联网的方式去想问题。现在几年过去了，这种观念已经逐步被越来越多的企业家、甚至企业以外的各行各业、各个领域的人所认可了。但“互联网思维”这个词也演变成多个不同的解释。互联网时代的思考方式，不局限在互联网产品、互联网企业；这里指的互联网，不单指桌面互联网或者移动互联网，是泛互联网，因为未来的网络形态一定是跨越各种终端设备的，台式机、笔记本、平板、手机、手表、眼镜，等等。
+""")
+    print(''.join(seganswerdoc))

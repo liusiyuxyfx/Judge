@@ -4,10 +4,12 @@ import webcrawlerrequests
 import answerprocessing
 import xlwt
 import sys
+import re
+import databaseact
 import time
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog
+from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QMessageBox
 from Mainwindow import *
 from terminalshow import *
 
@@ -17,22 +19,26 @@ class printThread(QThread):
         super(printThread,self).__init__()
     def run(self):
         self.buttonclicked.emit(0)
-        print(global_url)
-        print(global_standardAnswer)
-        webcrawlerrequests.getData(global_url,global_name, global_password)
-        scoredict = answerprocessing.calculate(global_standardAnswer)
-        f = xlwt.Workbook()
-        sheet1 = f.add_sheet('成绩', cell_overwrite_ok=True)
-        row0 = ["昵称", "姓名", "成绩"]
-        for i in range(0, len(row0)):
-            sheet1.write(0, i, row0[i])
-        cnt = 1
-        for key, value in scoredict.items():
-            sheet1.write(cnt, 0, key)
-            sheet1.write(cnt, 1, value[1])
-            sheet1.write(cnt, 2, value[0])
-            cnt += 1
-        f.save('test.xls')
+        question, content , islogin = webcrawlerrequests.getData(global_url,global_name, global_password)
+        if islogin:
+            print('===================================')
+            print('开始计算学生成绩........')
+            scoredict, seganswerlist = answerprocessing.calculate(global_standardAnswer)
+            print('计算结束....')
+
+            databaseact.insertScore()
+            f = xlwt.Workbook()
+            sheet1 = f.add_sheet('成绩', cell_overwrite_ok=True)
+            row0 = ["昵称", "姓名", "成绩"]
+            for i in range(0, len(row0)):
+                sheet1.write(0, i, row0[i])
+            cnt = 1
+            for key, value in scoredict.items():
+                sheet1.write(cnt, 0, key)
+                sheet1.write(cnt, 1, value[1])
+                sheet1.write(cnt, 2, value[0])
+                cnt += 1
+            f.save('test.xls')
         self.buttonclicked.emit(1)
         pass
 
@@ -47,15 +53,32 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         super(MyWindow, self).__init__(parent)
         self.setupUi(self)
         self.pushButton_getScore.clicked.connect(self.onclick)
+
+    def closeEvent(self, event):
+        sys.exit(app.exec_())
+
     def onclick(self):
-        global global_url , global_name, global_standardAnswer, global_password
-        global_url = self.lineEdit_url.text()
-        global_name = self.lineEdit_name.text()
-        global_password = self.lineEdit_password.text()
-        global_standardAnswer = self.plainTextEdit_standardanswer.toPlainText()
-        dialog1 = childWindow1()
-        dialog1.show()
-        dialog1.exec()
+        url = re.sub(r'\s+', '',self.lineEdit_url.text())
+        name = re.sub(r'\s+', '',self.lineEdit_name.text())
+        password = re.sub(r'\s+', '',self.lineEdit_password.text())
+        standardAnswer = re.sub(r'\s+', '',self.plainTextEdit_standardanswer.toPlainText())
+        if name == '' :
+            QMessageBox.critical(self, "错误", "请输入用户名!!", QMessageBox.Ok)
+        elif password == '' :
+            QMessageBox.critical(self, "错误", "请输入密码!!", QMessageBox.Ok)
+        elif url == '':
+            QMessageBox.critical(self, "错误", "请输入地址!!", QMessageBox.Ok)
+        elif standardAnswer == '' :
+            QMessageBox.critical(self, "错误", "请输入标准答案!!", QMessageBox.Ok)
+        else :
+            #print(type(self.plainTextEdit_standardanswer.toPlainText()))
+            global global_url , global_name, global_standardAnswer, global_password
+            global_url = self.lineEdit_url.text()
+            global_name = self.lineEdit_name.text()
+            global_password = self.lineEdit_password.text()
+            global_standardAnswer = self.plainTextEdit_standardanswer.toPlainText()
+            dialog1 = childWindow1()
+            dialog1.exec()
 
 class childWindow1(QDialog, Ui_Dialog):
     printth = printThread()
@@ -66,9 +89,11 @@ class childWindow1(QDialog, Ui_Dialog):
         #将控制台输出重定向到textEdit控件
         sys.stdout = EmittingStream(textWritten=self.outputWritten)
         sys.stderr = EmittingStream(textWritten=self.outputWritten)
-
         self.printth.buttonclicked.connect(self.ifbuttoncanpush)
         self.printth.start()
+
+    def closeEvent(self, event):
+        self.printth.quit()
 
     def outputWritten(self, text):
         cursor = self.textEdit.textCursor()
@@ -82,7 +107,6 @@ class childWindow1(QDialog, Ui_Dialog):
             self.pushButton.setEnabled(False)
         elif i == 1:
             self.pushButton.setEnabled(True)
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

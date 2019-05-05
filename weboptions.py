@@ -4,6 +4,12 @@ import random
 
 from selenium.webdriver.chrome.options import Options
 
+def getDomainDwrUrl(str):
+    if str == 'question':
+        return 'https://www.icourse163.org/dwr/call/plaincall/PostBean.getPostDetailById.dwr'
+    elif str == 'answers':
+        return 'https://www.icourse163.org/dwr/call/plaincall/PostBean.getPaginationReplys.dwr'
+
 def Chrome_headless():
     chrome_options = Options()
     chrome_options.add_argument('--no-sandbox')  # 解决DevToolsActivePort文件不存在的报错
@@ -31,7 +37,7 @@ def getCookiesAndSessionID():
             httpsessionID = cookie['value']
     return cookies, httpsessionID
 
-def getHeaders(url):
+def getHeaders():
     header= {
         #'cookie': getCookies(),
         'accept-encoding':'gzip, deflate, br',
@@ -53,6 +59,18 @@ def getPayloads(httpsessionid, pid, page):
         'c0-param0': pid,
         'c0-param1': 2,
         'c0-param2': page,
+        'batchId': random.randint(1000000000000, 20000000000000)
+    }
+    return payloads
+def getQuestionPayloads(httpsessionid, pid):
+    payloads ={
+        'callCount': 1,
+        'scriptSessionId': '${scriptSessionId}' + str(random.randint(0, 200)),
+        'httpSessionId': httpsessionid,
+        'c0-scriptName': 'PostBean',
+        'c0-methodName': 'getPostDetailById',
+        'c0-id': 0,
+        'c0-param0': pid,
         'batchId': random.randint(1000000000000, 20000000000000)
     }
     return payloads

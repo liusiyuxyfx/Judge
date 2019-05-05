@@ -219,6 +219,10 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        MainWindow.setTabOrder(self.lineEdit_name, self.lineEdit_password)
+        MainWindow.setTabOrder(self.lineEdit_password, self.lineEdit_url)
+        MainWindow.setTabOrder(self.lineEdit_url, self.plainTextEdit_standardanswer)
+        MainWindow.setTabOrder(self.plainTextEdit_standardanswer, self.pushButton_getScore)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

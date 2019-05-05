@@ -612,6 +612,13 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>lineEdit_password</tabstop>
+  <tabstop>lineEdit_url</tabstop>
+  <tabstop>plainTextEdit_standardanswer</tabstop>
+  <tabstop>pushButton_getScore</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
