@@ -38,10 +38,15 @@ def insertScore(table, scoredict):
     cursor.close()
     db.close()
 
-def createQuestion(title, detail, wordcloudblob, numberlistblob):
-    sql = ("insert into StudentScore.questioninfo (title, detail, wordcloud)" 
+def createQuestion(title, detail, wordcloudblob, numbercountblob):
+    db, cursor = connectDB()
+    sql = ("insert into StudentScore.questioninfo (title, detail, numbercount)" 
            "values (%s, %s, %s, %s)")
-    
+    values = (title, detail, wordcloudblob, numbercountblob)
+    cursor.execute(sql, values)
+    cursor.close()
+    db.close()
+
 #createTable('asds', cursor)
 
 if __name__ == '__main__':
