@@ -38,10 +38,12 @@ def insertScore(table, scoredict):
     cursor.close()
     db.close()
 
-def createQuestion(title, detail, wordcloudimg):
-    sql = "'insert into StudentScore.questioninfo (title, detail, wordcloud) values ('"
-    sql += (title  + "','" + detail + "','" + pymysql.escape_string(wordcloudimg) + "')" )
+def createQuestion(title, detail, wordcloudblob, numberlistblob):
+    sql = ("insert into StudentScore.questioninfo (title, detail, wordcloud)" 
+           "values (%s, %s, %s, %s)")
+    
 #createTable('asds', cursor)
+
 if __name__ == '__main__':
     db, cursor = connectDB()
     createTableSql('asds',cursor)

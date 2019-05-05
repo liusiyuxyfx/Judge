@@ -1,7 +1,7 @@
 import re
 import random
 import requests
-import matplotlib as plt
+import matplotlib
 # httpsessionid = ''
 # pid = ''
 # header= {
@@ -36,8 +36,16 @@ import matplotlib as plt
 # print(list(dict.values()))
 # print(list(value[0] for value in dict.values()))
 colors = []
-for name, hex in plt.colors.cnames.items():
+# for name, hex in plt.colors.cnames.items():
+#
+#     colors.append(name)
+#
+# print(colors)
+# xlist = ['0~40', '40~50', '50~60', '60~70', '70~80', '80_90', '90~100']
+# colors=['orangered','darksalmon','pink','blanchedalmond','paleturquoise','aquamarine','springgreen']
+import matplotlib.font_manager
 
-    colors.append(name)
+a = sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
 
-print(colors)
+for i in a:
+    print(i)

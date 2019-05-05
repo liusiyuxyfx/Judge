@@ -21,24 +21,8 @@ class printThread(QThread):
         self.buttonclicked.emit(0)
         question, content , islogin = webcrawlerrequests.getData(global_url,global_name, global_password)
         if islogin:
-            print('===================================')
-            print('开始计算学生成绩........')
-            scoredict, seganswerlist = answerprocessing.calculate(global_standardAnswer)
-            print('计算结束....')
-
-            databaseact.insertScore()
-            f = xlwt.Workbook()
-            sheet1 = f.add_sheet('成绩', cell_overwrite_ok=True)
-            row0 = ["昵称", "姓名", "成绩"]
-            for i in range(0, len(row0)):
-                sheet1.write(0, i, row0[i])
-            cnt = 1
-            for key, value in scoredict.items():
-                sheet1.write(cnt, 0, key)
-                sheet1.write(cnt, 1, value[1])
-                sheet1.write(cnt, 2, value[0])
-                cnt += 1
-            f.save('test.xls')
+            scoredict, wordcloudblob, numberlistblob = answerprocessing.calculate(global_standardAnswer)
+            databaseact.insertScore(question, content, scoredict, wordcloudblob, numberlistblob)
         self.buttonclicked.emit(1)
         pass
 
