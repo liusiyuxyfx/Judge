@@ -43,9 +43,8 @@ colors = []
 # print(colors)
 # xlist = ['0~40', '40~50', '50~60', '60~70', '70~80', '80_90', '90~100']
 # colors=['orangered','darksalmon','pink','blanchedalmond','paleturquoise','aquamarine','springgreen']
-import matplotlib.font_manager
+import re
 
-a = sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
-
-for i in a:
-    print(i)
+str = 'hrbcu1233我是你爸爸'
+str = re.search(r'hrbcu[0-9]*(.*)', str).group(1)
+print(str)
