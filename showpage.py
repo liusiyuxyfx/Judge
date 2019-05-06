@@ -70,6 +70,12 @@ class Ui_Dialog_showpage(object):
         self.graphicsView_vu = QtWidgets.QGraphicsView(Dialog_showpage)
         self.graphicsView_vu.setGeometry(QtCore.QRect(631, 427, 561, 321))
         self.graphicsView_vu.setObjectName("graphicsView_vu")
+        self.comboBox = QtWidgets.QComboBox(Dialog_showpage)
+        self.comboBox.setGeometry(QtCore.QRect(630, 10, 511, 51))
+        self.comboBox.setObjectName("comboBox")
+        self.pushButton_2 = QtWidgets.QPushButton(Dialog_showpage)
+        self.pushButton_2.setGeometry(QtCore.QRect(1140, 20, 61, 31))
+        self.pushButton_2.setObjectName("pushButton_2")
 
         self.retranslateUi(Dialog_showpage)
         QtCore.QMetaObject.connectSlotsByName(Dialog_showpage)
@@ -84,5 +90,6 @@ class Ui_Dialog_showpage(object):
         self.pushButton_close.setText(_translate("Dialog_showpage", "关闭"))
         self.label_2.setText(_translate("Dialog_showpage", "热词:"))
         self.label_3.setText(_translate("Dialog_showpage", "统计:"))
+        self.pushButton_2.setText(_translate("Dialog_showpage", "删除"))
 
 

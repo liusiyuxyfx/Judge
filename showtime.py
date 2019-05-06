@@ -2,13 +2,22 @@
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QMessageBox
-from showpage import *
 import numpy as np
 import xlwt
+import uuid
+import string
+import random
 
 plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
-
+def imagepath(id) :
+    return './images/' + id +'.png'
+def getUniqueId():
+    imgid = uuid.uuid1().hex[:16]
+    ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8))
+    imgid  = imgid + ran_str
+    return imgid
 def getNumberCount(numberlist, averagescorelist):
+
     fig =plt.figure(num=1, figsize=(5.5, 2.9), dpi=100)
     axes = fig.add_subplot(111)
     x = range(len(numberlist))
@@ -38,11 +47,11 @@ def getNumberCount(numberlist, averagescorelist):
         axes.text(a, b, str(b),  ha="center", va="top", color='cornflowerblue',rotation=45,)
     # self.draw()
     #plt.show()
-    plt.savefig('./cachefiles/numbercount.png')
-    fp = open('./cachefiles/numbercount.png', 'rb')
-    img = fp.read()
-    fp.close()
-    return img
+    imgid = getUniqueId()
+    plt.savefig(imagepath(imgid))
+    plt.cla()
+    plt.clf()
+    return imgid
 
 def getWordCloud(url):
     wordcloud = WordCloud(font_path='./fonts/simheittf.ttf',  # 字体
@@ -55,22 +64,9 @@ def getWordCloud(url):
                           )
     # print(''.join(seganswerdoc))
     wordcloud.generate_from_text(url)
-    wordcloud.to_file('./cachefiles/wordcloud.png')
-    fp = open('./cachefiles/wordcloud.png', 'rb')
-    img = fp.read()
-    fp.close()
-    return img
-
-def readBlob(identify, blobstr):
-    if identify == 'wordcloud':
-        filename = './cachefiles/wordcloud.png'
-    else :
-        filename = './cachefiles/numbercount.png'
-    with open(filename, 'wb') as f:
-        f.write(blobstr)
-    f.close()
-    return filename
-
+    imgid = getUniqueId()
+    wordcloud.to_file(imagepath(imgid))
+    return imgid
 
 def saveAsExcel(scoredict):
     print('================================')
@@ -89,16 +85,13 @@ def saveAsExcel(scoredict):
     f.save('./学生成绩单.xls')
     print('保存成功，如需查看，请在程序根目录下打开 学生成绩单.xls')
 
-class childWindow2(QDialog, Ui_Dialog_showpage):
-    def __init__(self):
-        QDialog.__init__(self)
-        self.setupUi(self)
 
 # app = QApplication(sys.argv)
 # myWin = childWindow2()
 # myWin.show()
 # sys.exit(app.exec_())
 if __name__ == '__main__':
+    from showpage import *
     from PyQt5.QtCore import *
     from PyQt5.QtGui import *
     from Mainwindow import *

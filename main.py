@@ -1,33 +1,41 @@
-# coding=gbk
+# coding=utf8
 #https://www.cnblogs.com/gaigaige/p/7883713.html
 import webcrawlerrequests
 import answerprocessing
-import xlwt
 import sys
 import re
 import databaseact
-import time
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QMessageBox
 from Mainwindow import *
 from terminalshow import *
-
+from showpage import *
+import showtime
+import time
+import faulthandler
 class printThread(QThread):
     buttonclicked = pyqtSignal(int)
+    stopsignal = pyqtSignal()
     def __init__(self):
         super(printThread,self).__init__()
     def run(self):
         self.buttonclicked.emit(0)
-        question, content , islogin = webcrawlerrequests.getData(global_url,global_name, global_password)
+        print(global_url, global_name, global_password)
+        question, content , islogin = webcrawlerrequests.getData(global_url, global_name, global_password)
         if islogin:
+            print(question, content)
             scoredict, wordcloudblob, numberlistblob = answerprocessing.calculate(global_standardAnswer)
-            databaseact.insertScore(question, content, scoredict, wordcloudblob, numberlistblob)
+            global questionid
+            time.sleep(3)
+            questionid = databaseact.autocreateQuestion(question, content, wordcloudblob, numberlistblob, scoredict)
+            print('================================')
+            print('è¯·ç‚¹å‡» *ä¸‹ä¸€æ­¥* æŒ‰é’®')
         self.buttonclicked.emit(1)
-        pass
+        self.stopsignal.emit()
 
 class EmittingStream(QtCore.QObject):
-    textWritten = QtCore.pyqtSignal(str)  # ¶¨ÒåÒ»¸ö·¢ËÍstrµÄĞÅºÅ
+    textWritten = QtCore.pyqtSignal(str)  # å®šä¹‰ä¸€ä¸ªå‘é€strçš„ä¿¡å·
 
     def write(self, text):
         self.textWritten.emit(str(text))
@@ -47,13 +55,13 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         password = re.sub(r'\s+', '',self.lineEdit_password.text())
         standardAnswer = re.sub(r'\s+', '',self.plainTextEdit_standardanswer.toPlainText())
         if name == '' :
-            QMessageBox.critical(self, "´íÎó", "ÇëÊäÈëÓÃ»§Ãû!!", QMessageBox.Ok)
+            QMessageBox.critical(self, "é”™è¯¯", "è¯·è¾“å…¥ç”¨æˆ·å!!", QMessageBox.Ok)
         elif password == '' :
-            QMessageBox.critical(self, "´íÎó", "ÇëÊäÈëÃÜÂë!!", QMessageBox.Ok)
+            QMessageBox.critical(self, "é”™è¯¯", "è¯·è¾“å…¥å¯†ç !!", QMessageBox.Ok)
         elif url == '':
-            QMessageBox.critical(self, "´íÎó", "ÇëÊäÈëµØÖ·!!", QMessageBox.Ok)
+            QMessageBox.critical(self, "é”™è¯¯", "è¯·è¾“å…¥åœ°å€!!", QMessageBox.Ok)
         elif standardAnswer == '' :
-            QMessageBox.critical(self, "´íÎó", "ÇëÊäÈë±ê×¼´ğ°¸!!", QMessageBox.Ok)
+            QMessageBox.critical(self, "é”™è¯¯", "è¯·è¾“å…¥æ ‡å‡†ç­”æ¡ˆ!!", QMessageBox.Ok)
         else :
             #print(type(self.plainTextEdit_standardanswer.toPlainText()))
             global global_url , global_name, global_standardAnswer, global_password
@@ -61,23 +69,20 @@ class MyWindow(QMainWindow, Ui_MainWindow):
             global_name = self.lineEdit_name.text()
             global_password = self.lineEdit_password.text()
             global_standardAnswer = self.plainTextEdit_standardanswer.toPlainText()
-            dialog1 = childWindow1()
-            dialog1.exec()
+
+    #def showPage(self):
+
 
 class childWindow1(QDialog, Ui_Dialog):
     printth = printThread()
     def __init__(self):
         QDialog.__init__(self)
         self.setupUi(self)
-
-        #½«¿ØÖÆÌ¨Êä³öÖØ¶¨Ïòµ½textEdit¿Ø¼ş
-        sys.stdout = EmittingStream(textWritten=self.outputWritten)
-        sys.stderr = EmittingStream(textWritten=self.outputWritten)
-        self.printth.buttonclicked.connect(self.ifbuttoncanpush)
-        self.printth.start()
-
-    def closeEvent(self, event):
-        self.printth.quit()
+        #å°†æ§åˆ¶å°è¾“å‡ºé‡å®šå‘åˆ°textEditæ§ä»¶
+        # sys.stdout = EmittingStream(textWritten=self.outputWritten)
+        # sys.stderr = EmittingStream(textWritten=self.outputWritten)
+        # self.printth.buttonclicked.connect(self.ifbuttoncanpush)
+        # self.printth.start()
 
     def outputWritten(self, text):
         cursor = self.textEdit.textCursor()
@@ -85,16 +90,40 @@ class childWindow1(QDialog, Ui_Dialog):
         cursor.insertText(text)
         self.textEdit.setTextCursor(cursor)
         self.textEdit.ensureCursorVisible()
-
+    def missionStart(self):
+        sys.stdout = EmittingStream(textWritten=self.outputWritten)
+        sys.stderr = EmittingStream(textWritten=self.outputWritten)
+        self.printth.buttonclicked.connect(self.ifbuttoncanpush)
+        self.printth.stopsignal.connect(self.stopthread)
+        self.printth.start()
+    def stopthread(self):
+        self.printth.stop()
     def ifbuttoncanpush(self, i):
         if i == 0:
             self.pushButton.setEnabled(False)
         elif i == 1:
             self.pushButton.setEnabled(True)
 
-if __name__ == '__main__':
+class childWindow2(QDialog, Ui_Dialog_showpage):
+    def __init__(self):
+        QDialog.__init__(self)
+        self.setupUi(self)
+
+def test():
     app = QApplication(sys.argv)
     myWin = MyWindow()
+    child1 = childWindow1()
+    myWin.pushButton_getScore.clicked.connect(child1.show)
+    myWin.pushButton_getScore.clicked.connect(child1.missionStart)
+    myWin.show()
+    sys.exit(app.exec_())
+if __name__ == '__main__':
+    faulthandler.enable()
+    app = QApplication(sys.argv)
+    myWin = MyWindow()
+    child1 = childWindow1()
+    myWin.pushButton_getScore.clicked.connect(child1.show)
+    myWin.pushButton_getScore.clicked.connect(child1.missionStart)
     myWin.show()
     sys.exit(app.exec_())
 
