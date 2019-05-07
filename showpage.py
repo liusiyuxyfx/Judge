@@ -35,6 +35,9 @@ class Ui_Dialog_showpage(object):
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
+        self.tableWidget.horizontalHeader().setStretchLastSection(False)
+        self.tableWidget.verticalHeader().setDefaultSectionSize(45)
+        self.tableWidget.verticalHeader().setStretchLastSection(False)
         self.verticalLayout_left.addWidget(self.tableWidget)
         self.horizontalLayoutWidget = QtWidgets.QWidget(Dialog_showpage)
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(40, 770, 521, 41))
@@ -52,7 +55,7 @@ class Ui_Dialog_showpage(object):
         self.pushButton_search.setObjectName("pushButton_search")
         self.horizontalLayout.addWidget(self.pushButton_search)
         self.pushButton_close = QtWidgets.QPushButton(Dialog_showpage)
-        self.pushButton_close.setGeometry(QtCore.QRect(1020, 770, 151, 41))
+        self.pushButton_close.setGeometry(QtCore.QRect(1070, 780, 141, 31))
         self.pushButton_close.setObjectName("pushButton_close")
         self.label_2 = QtWidgets.QLabel(Dialog_showpage)
         self.label_2.setGeometry(QtCore.QRect(631, 51, 46, 28))
@@ -80,6 +83,9 @@ class Ui_Dialog_showpage(object):
         self.label_numbercount.setGeometry(QtCore.QRect(640, 430, 560, 300))
         self.label_numbercount.setText("")
         self.label_numbercount.setObjectName("label_numbercount")
+        self.pushButton_getexcel = QtWidgets.QPushButton(Dialog_showpage)
+        self.pushButton_getexcel.setGeometry(QtCore.QRect(770, 780, 131, 31))
+        self.pushButton_getexcel.setObjectName("pushButton_getexcel")
 
         self.retranslateUi(Dialog_showpage)
         QtCore.QMetaObject.connectSlotsByName(Dialog_showpage)
@@ -95,5 +101,6 @@ class Ui_Dialog_showpage(object):
         self.label_2.setText(_translate("Dialog_showpage", "热词:"))
         self.label_3.setText(_translate("Dialog_showpage", "统计:"))
         self.pushButton_delete.setText(_translate("Dialog_showpage", "删除"))
+        self.pushButton_getexcel.setText(_translate("Dialog_showpage", "生成Excel表格"))
 
 

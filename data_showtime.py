@@ -44,7 +44,7 @@ def getNumberCount(numberlist, averagescorelist):
     x = np.arange(len(xlist))
     ax2.plot(averagescorelist, c='y', marker='o', color='cornflowerblue')
     for a, b in zip(x, averagescorelist):
-        axes.text(a, b, str(b),  ha="center", va="top", color='cornflowerblue',rotation=45,)
+        ax2.text(a, b, str(b),  ha="center", va="bottom", color='cornflowerblue')
     # self.draw()
     #plt.show()
     imgid = getUniqueId()
@@ -67,25 +67,6 @@ def getWordCloud(url):
     imgid = getUniqueId()
     wordcloud.to_file(imagepath(imgid))
     return imgid
-
-def saveAsExcel(scoredict):
-    print('================================')
-    print('正在保存至excel文档........')
-    f = xlwt.Workbook()
-    sheet1 = f.add_sheet('成绩', cell_overwrite_ok=True)
-    row0 = ["昵称", "姓名", "成绩"]
-    for i in range(0, len(row0)):
-        sheet1.write(0, i, row0[i])
-    cnt = 1
-    for key, value in scoredict.items():
-        sheet1.write(cnt, 0, key)
-        sheet1.write(cnt, 1, value[1])
-        sheet1.write(cnt, 2, value[0])
-        cnt += 1
-    f.save('./学生成绩单.xls')
-
-    print('保存成功，如需查看，请在程序根目录下打开 学生成绩单.xls')
-
 
 # app = QApplication(sys.argv)
 # myWin = childWindow2()

@@ -129,9 +129,9 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>190</x>
       <y>20</y>
-      <width>311</width>
+      <width>581</width>
       <height>51</height>
      </rect>
     </property>
@@ -585,7 +585,7 @@
      </font>
     </property>
     <property name="text">
-     <string>学生问答优劣自动评价</string>
+     <string>中国大学MOOC学生问答优劣自动评价系统</string>
     </property>
     <property name="textFormat">
      <enum>Qt::PlainText</enum>
@@ -637,7 +637,7 @@
      <string>控制台:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_showWindow2">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -648,6 +648,71 @@
     </property>
     <property name="text">
      <string>下一步</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_time">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>450</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>450</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>反爬虫间隔时间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>450</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>秒 （默认2s，最大5s）</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_showWindow">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>20</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>查看数据库</string>
     </property>
    </widget>
   </widget>

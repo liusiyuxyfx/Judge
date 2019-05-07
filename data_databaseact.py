@@ -1,104 +1,144 @@
 # coding=gbk
 import pymysql
 import uuid
-import chardet
-import time
 import string
 import random
-from PyQt5.QtWidgets import QMessageBox
+import os
+#获得唯一问题号
 def getUniqueQuestionId():
-    i = random.randint(1, 3)
-    a = random.randint(1, 3)
-    imgid = uuid.uuid1().hex[:i]
-    imgid2 = uuid.uuid1().hex[a:]
+    i = random.randint(1, 15)
+    a = random.randint(1, 15)
+    uid = uuid.uuid1().hex
+    imgid = uid[:i]
+    imgid2 = uid[len(uid)-a:]
     ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8))
     imgid  = imgid + imgid2 +  ran_str
     return imgid
+
+#连接数据库
+#return next, error, db, cursor
 def connectDB():
-    db = pymysql.connect(host="localhost",
-                         user="root",
-                         password="richardliu",
-                         database="STUDENTSCORE",
-                         charset="utf8")
-    db.autocommit(True)
-    cursor = db.cursor()
-    return db, cursor
+    try:
+        db = pymysql.connect(host="localhost",
+                             user="root",
+                             password="richardliu",
+                             database="STUDENTSCORE",
+                             charset="utf8")
+        db.autocommit(True)
+        cursor = db.cursor()
+        return db, cursor
+    except Exception as e:
+        raise e
+#获得表名
 def tablename(questionid):
     return 'question' + str(questionid)
-def createTable(title):
+
+#获取最新记录
+def getLatestId():
+    sql = 'select * from studentscore.questioninfo where id=(select last_insert_id());'
     db, cursor = connectDB()
+    cursor.execute(sql)
+    id = cursor.fetchone()[0]
+    return id
+
+
+
+#创建成绩表
+def createTable(title):
     try:
+        db, cursor = connectDB()
         tabletitle = 'create table '+ title
         tablecontent="""
         (
             nickname varchar(40) not null primary key,
             realname varchar(20) null,
-            score int null,
+            score varchar(6) null,
             answer TEXT null
         );
         """
         sql = tabletitle + tablecontent
         cursor.execute(sql)
+        cursor.close()
+        db.close()
     except Exception as e:
-        print(e)
-    cursor.close()
-    db.close()
+        raise e
 
+#插入语句SQL
 def insertScoresSql(cursor ,table, nickname, realname, score, answer):
     try:
         sql = 'insert into StudentScore.' + table
-        sql += "(nickname, realname, score, answer) values ('"
-        sql += (nickname + "','" + realname + "','" + str(score) + "','" + answer + "')")
-        cursor.execute(sql)
+        sql += "(nickname, realname, score, answer) values ( %s, %s, %s, %s)"
+        value = (nickname, realname, str(score), answer)
+        cursor.execute(sql, value)
     except Exception as e:
-        print(e)
-        
+        raise Exception(e, nickname, realname, score, answer, sql)
 
+#插入全部成绩
 def insertScore(table, scoredict):
     db, cursor = connectDB()
-    try:
-        for key, value in scoredict.items():
-            #print(key, value[0], value[1], value[2])
+    for key, value in scoredict.items():
+        #print(key, value[0], value[1], value[2])
+        try:
             insertScoresSql(cursor, table, key, value[1], value[0], value[2])
-    except Exception as e:
-        print(e)
+        except Exception as e:
+            print('XXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+            print('数据库插入错误')
+            print('错误类型：')
+            print(e)
+
     cursor.close()
     db.close()
 
-
+#添加问题信息
 def createQuestion(title, detail, wordcloudpath, numbercountpath):
-    db, cursor = connectDB()
-    id = getUniqueQuestionId()
     try:
         db, cursor = connectDB()
+        id = getUniqueQuestionId()
         sql = ("insert into StudentScore.questioninfo ( id, title, detail, wordcloud, numbercount)"
                "values ( %s, %s, %s, %s, %s)")
         values = ( id, title, detail, wordcloudpath, numbercountpath)
-        #print(chardet.detect(wordpath))
         cursor.execute(sql, values)
+        cursor.close()
+        db.close()
+        return id
     except Exception as e:
-        print(e)
+        print('XXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        print ('添加问题错误')
+        print ('错误类型:')
+        print (e)
 
-    cursor.close()
-    db.close()
-    return id
-
+#自动创建问题及成绩表
 def autocreateQuestion(title, detail, wordcloudpath, numbercountpath, scoresdict):
-    print('================================')
-    print('开始写入数据库..........')
-    print('  + 创建问题详情.....')
-    questionid = createQuestion(title, detail, wordcloudpath, numbercountpath)
-    tablename = 'question' + str(questionid)
-    print('  + 创建成绩表.....')
-    createTable(tablename)
-    print('  + 插入成绩.....')
-    insertScore(tablename, scoresdict)
-    print('  + 数据库存储完成！')
-    return questionid
+    try:
+        print('================================')
+        print('开始写入数据库..........')
+        print('  + 创建问题详情.....')
+        questionid = createQuestion(title, detail, wordcloudpath, numbercountpath)
+        print('  + 创建成绩表.....')
+        createTable(tablename(questionid))
+        print('  + 插入成绩.....')
+        insertScore(tablename(questionid), scoresdict)
+        print('  + 数据库存储完成！')
+        return questionid
+    except Exception as e:
+        print('XXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        print('自动添加问题和成绩表出错')
+        print('错误类型:')
+        print(e)
+        print('尝试撤回所有数据库操作')
+        try:
+            deleteQuestion(questionid)
+            os.remove('./images/' + wordcloudpath +'.png')
+            os.remove('./images/' + numbercountpath + '.png')
+        except:
+            pass
+        finally:
+            print('撤回操作完成')
 
-#createTable('asds', cursor)print(createQuestion('asdasdasd','asdasdasdas',wordpath, numbercountpath))
 
 
+
+#查询问题详情
 def searchQuestionsDetail(questionid):
     db, cursor = connectDB()
     sql = ('select * from studentscore.questioninfo where id = %s')
@@ -113,6 +153,7 @@ def searchQuestionsDetail(questionid):
     db.close()
     return questioninfo, rownum, scoretable
 
+#查询全部问题
 def searchQuestionList():
     db, cursor = connectDB()
     sql = 'select id, title from studentscore.questioninfo'
@@ -122,6 +163,7 @@ def searchQuestionList():
     db.close()
     return questionlist
 
+#查询根据学生id查询成绩详情
 def searchStudentById(id,questionid):
     db, cursor = connectDB()
     filename = tablename(questionid)
@@ -132,6 +174,7 @@ def searchStudentById(id,questionid):
     db.close()
     return studentinfo
 
+#查询根据学生姓名查询
 def searchStudentByName(name, questionid):
     db, cursor = connectDB()
     filename = tablename(questionid)
@@ -142,20 +185,79 @@ def searchStudentByName(name, questionid):
     db.close()
     return studentinfo
 
+#查询所有学生成绩
+def searchScoreTable(questionid):
+    db, cursor = connectDB()
+    sql = "select nickname, realname, score from studentscore." + tablename(questionid)
+    cursor.execute(sql)
+    scoretable = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return scoretable
+
+#删除问题及其关联表格
 def deleteQuestion(questionid):
     db, cursor = connectDB()
     filename = tablename(questionid)
-    sql = "drop table " + filename
-    cursor.execute(sql)
-    sql = "delete from studentscore.questioninfo where id = "+ questionid
-    cursor.execute(sql)
+    try:
+        sql = "drop table " + filename
+        cursor.execute(sql)
+    except Exception as e:
+        print(e)
+        pass
+    try:
+        sql = ('select * from studentscore.questioninfo where id = %s')
+        cursor.execute(sql, (questionid))
+        questioninfo = cursor.fetchone()
+        wordcloudname = questioninfo[3]
+        numbercountname = questioninfo[4]
+        os.remove('./images/'+wordcloudname+'.png')
+        os.remove('./images/'+numbercountname+'.png')
+    except Exception as e:
+        print(e)
+        pass
+    try:
+        sql = "delete from studentscore.questioninfo where id = %s"
+        cursor.execute(sql,questionid)
+    except Exception as e:
+        print(e)
+        pass
     cursor.close()
     db.close()
 
+
+def connectDB2():
+    try:
+        db = pymysql.connect(host="localhosts",
+                             user="root",
+                             password="richardliu",
+                             database="STUDENTSCORE",
+                             charset="utf8")
+        db.autocommit(True)
+        cursor = db.cursor()
+    except Exception as e:
+        print(e)
+
+        #pass
+def b(i):
+    try:
+        connectDB2()
+    except Exception as e:
+        raise Exception('登录失败')
+    if i == 4:
+        raise Exception('buasd')
+    b = 1 / i
+
+def a():
+    b(4)
 if __name__ == '__main__':
-    #createTableSql('asds',cursor)
-    # import answerprocessing
-    # scoresdict, wordpath, numbercountpath = answerprocessing.calculate("""互联网思维，就是在（移动）互联网、大数据、云计算等科技不断发展的背景下，对市场、对用户、对产品、对企业价值链乃至对整个商业生态的进行重新审视的思考方式。最早提出互联网思维的是百度公司创始人李彦宏。在百度的一个大型活动上，李彦宏与传统产业的老板、企业家探讨发展问题时，李彦宏首次提到“互联网思维”这个词。他说，我们这些企业家们今后要有互联网思维，可能你做的事情不是互联网，但你的思维方式要逐渐像互联网的方式去想问题。现在几年过去了，这种观念已经逐步被越来越多的企业家、甚至企业以外的各行各业、各个领域的人所认可了。但“互联网思维”这个词也演变成多个不同的解释。互联网时代的思考方式，不局限在互联网产品、互联网企业；这里指的互联网，不单指桌面互联网或者移动互联网，是泛互联网，因为未来的网络形态一定是跨越各种终端设备的，台式机、笔记本、平板、手机、手表、眼镜，等等。""")
-    # autocreateQuestion('我是你爸爸','',wordpath,numbercountpath,scoresdict)
-   # searchQuestionsDetail('8d3ed8cb8a7fdab2')
-   print(getUniqueQuestionId())
+    print(getLatestId())
+    #print(getUniqueQuestionId())
+    # try:
+    #     a()
+    # except Exception as e:
+    #     print(e)
+    # print(list(range(1, 6)))
+    #print('2'.isdigit())
+    #a(2)
+   #print(getUniqueQuestionId())

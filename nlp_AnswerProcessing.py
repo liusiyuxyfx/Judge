@@ -37,33 +37,38 @@ def getScoreDict(answerdict, standardAnswer):
     averagescore= [0] * 7
     print(" + 开始统计成绩.....")
     for key, value in answerdict.items():
-        score = nlp_tfidf.getCosine(weight[0], weight[cnt])
-        score = int(round(score/fullscore, 2) * 100)
-        if score < 40:
-            numberlist[0] += 1
-            averagescore[0] += score
-        elif 40 <= score and score < 50:
-            numberlist[1] += 1
-            averagescore[1] += score
-        elif 50 <= score and score < 60:
-            numberlist[2] += 1
-            averagescore[2] += score
-        elif 60 <= score and score < 70:
-            numberlist[3] += 1
-            averagescore[3] += score
-        elif 70 <= score and score < 80:
-            numberlist[4] += 1
-            averagescore[4] += score
-        elif 80 <= score and score < 90:
-            numberlist[5] += 1
-            averagescore[5] += score
-        else :
-            numberlist[6] += 1
-            averagescore[6] += score
-        scoresdict[key].append(score)
-        scoresdict[key].append(value[1])
-        scoresdict[key].append(value[0])
-        cnt += 1
+        try:
+            score = nlp_tfidf.getCosine(weight[0], weight[cnt])
+            score = int(round(score/fullscore, 2) * 100)
+            if score < 40:
+                numberlist[0] += 1
+                averagescore[0] += score
+            elif 40 <= score and score < 50:
+                numberlist[1] += 1
+                averagescore[1] += score
+            elif 50 <= score and score < 60:
+                numberlist[2] += 1
+                averagescore[2] += score
+            elif 60 <= score and score < 70:
+                numberlist[3] += 1
+                averagescore[3] += score
+            elif 70 <= score and score < 80:
+                numberlist[4] += 1
+                averagescore[4] += score
+            elif 80 <= score and score < 90:
+                numberlist[5] += 1
+                averagescore[5] += score
+            else :
+                numberlist[6] += 1
+                averagescore[6] += score
+            scoresdict[key].append(score)
+            scoresdict[key].append(value[1])
+            scoresdict[key].append(value[0])
+        except Exception as e:
+            print(e)
+            print('学生记录: %s 出现问题，跳过!' % key)
+        finally:
+            cnt += 1
     for i in range(7):
         if numberlist[i] != 0:
             averagescore[i] = int(averagescore[i] / numberlist[i])
@@ -94,7 +99,6 @@ def calculate(standardAnswer):
     scoredict , seganswerdoc, numberlist, averagescore = getScoreDict(readAnswersdoc(), standardAnswer)
     print('  + 绘制词云.....')
     wordcloudpath = data_showtime.getWordCloud(''.join(seganswerdoc))
-
     return scoredict, wordcloudpath, numberlist, averagescore
 
 if __name__ == '__main__':
