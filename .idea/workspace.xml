@@ -3,45 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7758e792-5482-4c35-b686-0d1ce435f7de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mainwindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Mainwindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachefiles/answers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachefiles/numbercount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachefiles/wordcloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cachefiles/answers.json" beforeDir="false" afterPath="$PROJECT_DIR$/cachefiles/answers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_databaseact.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_databaseact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_showtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_showtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/0b5aaef8700b11e9A6xyIa5l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/0baafd72700b11e9PGHn2Zis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/113a7e4e700f11e9mhQA75Iw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/11887ac2700f11e9ueB7CO0U.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/31fd269e700b11e9wmQHAsk9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3248ddaa700b11e9V42v0cME.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3c76d964700e11e9HpFJXrtG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3cab4e1a700e11e9JY5oK0xn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/727b8294700e11e9lHY5y7OJ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/729612f8700e11e9abw7eS3U.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/776b977e700b11e96JDZtSQp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/779d028c700b11e9slwyNMHz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/991285c2700b11e9OkNISY7g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9941d728700b11e9hWlATNEd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ace5a446700e11e9ApSt1UY2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ad165780700e11e9BwQ5WhsT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/c33033bc700c11e99gHkN0Z5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/c3617b02700c11e93P8jhAoc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/d27ce292700d11e92HL8eIXy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/d2b1c4a8700d11e9VigntDoH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fec357c8700d11e9CjQWq35v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fef201e0700d11e9RzBV8U0Y.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nlp_AnswerProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp_AnswerProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nlp_dataclean.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp_dataclean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_show.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showpage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/showpage.ui" beforeDir="false" afterPath="$PROJECT_DIR$/showpage.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_requests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,13 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Judge$page_show.coverage" NAME="page_show Coverage Results" MODIFIED="1557212581386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$page_show.coverage" NAME="page_show Coverage Results" MODIFIED="1557237163757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$answerprocessing.coverage" NAME="answerprocessing Coverage Results" MODIFIED="1557147497778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$databaseact.coverage" NAME="databaseact Coverage Results" MODIFIED="1557207396915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$main.coverage" NAME="main Coverage Results" MODIFIED="1557212880373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$main.coverage" NAME="main Coverage Results" MODIFIED="1557239394390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$1.coverage" NAME="1 Coverage Results" MODIFIED="1557202269346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlergetcookie.coverage" NAME="webcrawlergetcookie Coverage Results" MODIFIED="1556790587500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$web_requests.coverage" NAME="web_requests Coverage Results" MODIFIED="1557208287617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$web_requests.coverage" NAME="web_requests Coverage Results" MODIFIED="1557239384045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerlogin.coverage" NAME="webcrawlerlogin Coverage Results" MODIFIED="1556794266282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$dataclean.coverage" NAME="dataclean Coverage Results" MODIFIED="1557119292127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerlogin2.coverage" NAME="webcrawlerlogin2 Coverage Results" MODIFIED="1556676177095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -76,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="129" column="75" selection-start-line="129" selection-start-column="75" selection-end-line="129" selection-end-column="75" />
+            <state relative-caret-position="178">
+              <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
               <folding>
                 <element signature="e#63#82#0" expanded="true" />
               </folding>
@@ -88,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_showtime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="426">
               <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding>
                 <element signature="e#13#44#0" expanded="true" />
@@ -100,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_requests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="100" column="45" lean-forward="true" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+            <state relative-caret-position="276">
+              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -110,10 +75,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_show.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/account.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="12" selection-start-line="4" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_databaseact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="220" column="37" selection-start-line="220" selection-start-column="37" selection-end-line="220" selection-end-column="37" />
+            <state relative-caret-position="-789">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding>
                 <element signature="e#13#27#0" expanded="true" />
               </folding>
@@ -122,28 +108,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/cursors.py">
+        <entry file="file://$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mainwindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="327" selection-start-line="327" selection-end-line="327" />
+            <state relative-caret-position="481">
+              <caret line="45" column="34" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/connections.py">
+        <entry file="file://$PROJECT_DIR$/detailpage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="731" selection-start-line="731" selection-end-line="731" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/err.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="111">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -151,29 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/showpage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="50" column="70" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mainwindow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1777">
-              <caret line="45" column="34" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_show.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1350">
-              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="750">
+              <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -189,13 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>layout</find>
-      <find>print(</find>
-      <find>\u201C\u666E\u9002\u8BA1\u7B97\u6280\u672F\u4E0E\u79FB\u52A8\u7F51\u7EDC\u3001\u65E0\u7EBF\u7F51\u7EDC\u6280\u672F\u76F8\u7ED3\u5408\u5C06\u63D0\u4F9B\u66F4\u52A0\u5F3A\u5927\u7684\u529F\u80FD\u201D\uFF0C</find>
-      <find>type</find>
-      <find>showtim</find>
-      <find>right</find>
-      <find>view</find>
       <find>wordcloud</find>
       <find>而是</find>
       <find>spring</find>
@@ -219,11 +173,19 @@
       <find>clear</find>
       <find>pageload</find>
       <find>deleteq</find>
+      <find>Ui_Dialog</find>
+      <find>searchstu</find>
+      <find>MessageBo</find>
+      <find>pyqtSignal</find>
+      <find>show</find>
+      <find>insert</find>
+      <find>create</find>
     </findStrings>
     <replaceStrings>
       <replace>html</replace>
       <replace>path</replace>
       <replace>threadmisson</replace>
+      <replace>Ui_Dialog_DetailPage</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -267,9 +229,10 @@
         <option value="$PROJECT_DIR$/1.py" />
         <option value="$PROJECT_DIR$/nlp_dataclean.py" />
         <option value="$PROJECT_DIR$/data_showtime.py" />
+        <option value="$PROJECT_DIR$/page_main.py" />
+        <option value="$PROJECT_DIR$/detailpage.py" />
         <option value="$PROJECT_DIR$/page_show.py" />
         <option value="$PROJECT_DIR$/data_databaseact.py" />
-        <option value="$PROJECT_DIR$/page_main.py" />
       </list>
     </option>
   </component>
@@ -284,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +273,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,8 +419,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.page_show" />
         <item itemvalue="Python.web_requests" />
+        <item itemvalue="Python.page_show" />
         <item itemvalue="Python.data_showtime" />
         <item itemvalue="Python.databaseact" />
       </list>
@@ -489,12 +452,13 @@
       <workItem from="1557123568282" duration="989000" />
       <workItem from="1557124563517" duration="1998000" />
       <workItem from="1557126784543" duration="25472000" />
-      <workItem from="1557185643051" duration="25333000" />
+      <workItem from="1557185643051" duration="25654000" />
+      <workItem from="1557234340632" duration="3309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222200000" />
+    <option name="totallyTimeSpent" value="225830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,7 +473,7 @@
     <frame x="0" y="23" width="1920" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.18051118" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.18210863" />
       <window_info id="Structure" order="1" sideWeight="0.5008518" side_tool="true" weight="0.25239617" />
       <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.2539936" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -525,12 +489,12 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840257" weight="0.32992035" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8567625" weight="0.32992035" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.51277953" side_tool="true" weight="0.665529" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32960597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.27316293" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32960597" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,11 +541,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/a8532e026fd311e9JOEW6539.png" />
-    <entry file="file://$PROJECT_DIR$/images/86f80dca6fd511e9gbfHRmPI.png" />
-    <entry file="file://$PROJECT_DIR$/images/872e69b06fd511e9DdVSMCHi.png" />
-    <entry file="file://$PROJECT_DIR$/images/39f2e6d06fd511e9zCfWR23i.png" />
-    <entry file="file://$PROJECT_DIR$/images/17a7462a6fd511e92RdZ0wsM.png" />
     <entry file="file://$PROJECT_DIR$/images/dd505b40700311e9F3hpsVOx.png" />
     <entry file="file://$PROJECT_DIR$/images/5b0f2aba700511e9byAf9Dd6.png" />
     <entry file="file://$PROJECT_DIR$/images/65fd2c70700911e9eE5Whygi.png" />
@@ -610,15 +569,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/113a7e4e700f11e9mhQA75Iw.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/8f975a84706711e915p2hGmq.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/8fc9ed78706711e93atsKByY.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/113a7e4e700f11e9mhQA75Iw.png" />
+    <entry file="file://$PROJECT_DIR$/images/8f975a84706711e915p2hGmq.png" />
+    <entry file="file://$PROJECT_DIR$/images/8fc9ed78706711e93atsKByY.png" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -649,12 +602,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cachefiles/wordcloud.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cachefiles/numbercount.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cachefiles/wordcloud.png" />
+    <entry file="file://$PROJECT_DIR$/cachefiles/numbercount.png" />
     <entry file="file://$PROJECT_DIR$/1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -669,13 +618,6 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -705,27 +647,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/75f020b0708b11e9ALWuvcQk.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/89c7d7a4708b11e9DlCOUgFX.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/75f020b0708b11e9ALWuvcQk.png" />
+    <entry file="file://$PROJECT_DIR$/images/89c7d7a4708b11e9DlCOUgFX.png" />
     <entry file="file://$PROJECT_DIR$/nlpfiles/CNENstopwords.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/8992bb78708b11e9JgunRv3W.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/7623e4c2708b11e9KNYDjGfo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/b66aa8e0708b11e9I0SYWsVB.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/8992bb78708b11e9JgunRv3W.png" />
+    <entry file="file://$PROJECT_DIR$/images/7623e4c2708b11e9KNYDjGfo.png" />
     <entry file="file://$PROJECT_DIR$/standardAnswer.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -733,55 +661,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="100" column="45" lean-forward="true" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mainwindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1777">
-          <caret line="45" column="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/err.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="4815">
           <caret line="327" selection-start-line="327" selection-end-line="327" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="10605">
           <caret line="731" selection-start-line="731" selection-end-line="731" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/418007c0709311e94lvynibL.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/2fee1a16709211e9gusapdKE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/2fb6e88e709211e9lZRtVsJA.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/41b3b386709311e9N4BRgtwW.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/b66aa8e0708b11e9I0SYWsVB.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/showpage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="50" column="70" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="750">
+          <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_showtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding>
+            <element signature="e#13#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detailpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="12" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page_show.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1350">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="237">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -790,28 +743,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_databaseact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="220" column="37" selection-start-line="220" selection-start-column="37" selection-end-line="220" selection-end-column="37" />
+        <state relative-caret-position="-789">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="e#13#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_showtime.py">
+    <entry file="file://$PROJECT_DIR$/web_requests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="276">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
           <folding>
-            <element signature="e#13#44#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mainwindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="45" column="34" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="129" column="75" selection-start-line="129" selection-start-column="75" selection-end-line="129" selection-end-column="75" />
+        <state relative-caret-position="178">
+          <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
           <folding>
             <element signature="e#63#82#0" expanded="true" />
           </folding>

@@ -1,12 +1,14 @@
 from showpage import *
 from PyQt5.QtGui import *
+from PyQt5.QtCore import *
 from PyQt5.QtWidgets import QApplication, QPushButton, QDialog, QTableWidget,QTableWidgetItem,QWidget,QHBoxLayout,QHeaderView,QMessageBox
 import data_databaseact
 import sys
 import xlwt
 import re
+import detailpage
 class childWindow(QDialog, Ui_Dialog_showpage):
-
+    sendStudentDetail = pyqtSignal(str, str, str, str, str)
     def __init__(self):
         QDialog.__init__(self)
         self.setupUi(self)
@@ -18,6 +20,7 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         self.pushButton_delete.clicked.connect(self.deleteQuestion)
         #self.pageload(self.questionid)
         self.pushButton_getexcel.clicked.connect(self.saveAsExcel)
+        self.pushButton_search.clicked.connect(self.showDetailPageByName)
         self.reloadCombobox()
         try:
             questionid = data_databaseact.searchQuestionList()[0][0]
@@ -78,10 +81,6 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         except:
             QMessageBox.critical(self, "错误", "查无此人", QMessageBox.Ok)
 
-    #框内查询事件
-    def searchStudentById(self, id):
-        return data_databaseact.searchStudentById(id, self.questionid)
-
     #加载图片
     def loadPicture(self,name,widget):
         pix = QPixmap('./images/' + name + '.png')
@@ -91,6 +90,7 @@ class childWindow(QDialog, Ui_Dialog_showpage):
     def deleteQuestion(self):
         data_databaseact.deleteQuestion(self.comboBox.currentData())
         self.reloadCombobox()
+        self.pageload(self.comboBox.itemData(1))
 
     #更新表格内容
     def updateTable(self, rownum, scoretable):
@@ -132,6 +132,51 @@ class childWindow(QDialog, Ui_Dialog_showpage):
             cnt += 1
         f.save('./学生成绩单.xls')
         QMessageBox.information(self, '导出成功', '请到程序根目录查看 学生成绩单.xls')
+
+    def showDetailPageByName(self):
+        try:
+            studentinfo = data_databaseact.searchStudentByName(self.lineEdit.text(), self.questionid)
+            self.childwindow3 = DetailPage()
+            self.sendStudentDetail.connect(self.childwindow3.loadPage)
+            self.sendStudentDetail.emit(self.questionid, studentinfo[0], studentinfo[1], studentinfo[2], studentinfo[3])
+            self.childwindow3.show()
+        except Exception as e:
+            QMessageBox.critical('错误', str(e))
+
+    #框内查询事件
+    def searchStudentById(self, id):
+     try:
+         studentinfo = data_databaseact.searchStudentById(id, self.questionid)
+         self.childwindow3 = DetailPage()
+         self.sendStudentDetail.connect(self.childwindow3.loadPage)
+         self.sendStudentDetail.emit(self.questionid, studentinfo[0], studentinfo[1], studentinfo[2],
+                                     studentinfo[3])
+         self.childwindow3.show()
+     except Exception as e:
+         QMessageBox.critical(self, '错误', str(e), QMessageBox.Ok)
+
+class DetailPage(QDialog,detailpage.Ui_Dialog_DetailPage):
+    def __init__(self):
+        QDialog.__init__(self)
+        self.setupUi(self)
+        self.pushButton_close.clicked.connect(self.close)
+        self.pushButton_update.clicked.connect(self.updateData)
+    def updateData(self):
+        try:
+             data_databaseact.updateStudentScore(self.questionid, self.nickname, self.lineEdit_realname.text(), self.lineEdit_score.text())
+        except Exception as e:
+            QMessageBox.critical(self, '错误', str(e), QMessageBox.Ok)
+    def loadPage(self,questionid, nickname, realname, score, answer):
+        self.questionid= questionid
+        self.nickname = nickname
+        self.realname = realname
+        self.answer = answer
+        self.lineEdit_nickname.setText(nickname)
+        self.lineEdit_realname.setText(realname)
+        self.lineEdit_score.setText(score)
+        self.plainTextEdit_answer.setPlainText(answer)
+        self.lineEdit_nickname.setReadOnly(True)
+        self.plainTextEdit_answer.setReadOnly(True)
 if __name__ == '__main__':
     global global_questionid
     global_questionid = 'f3ed92700d11e9a286d8cb8a7fdab2mEdh5LzX'

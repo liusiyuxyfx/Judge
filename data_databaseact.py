@@ -50,8 +50,8 @@ def createTable(title):
         tabletitle = 'create table '+ title
         tablecontent="""
         (
-            nickname varchar(40) not null primary key,
-            realname varchar(20) null,
+            nickname varchar(100) not null primary key,
+            realname varchar(100) null,
             score varchar(6) null,
             answer TEXT null
         );
@@ -222,6 +222,13 @@ def deleteQuestion(questionid):
     except Exception as e:
         print(e)
         pass
+    cursor.close()
+    db.close()
+
+def updateStudentScore(questionid, nickname, realname, score):
+    db , cursor = connectDB()
+    sql = 'update studentscore.' + tablename(questionid) + ' set realname = %s , score = %s where nickname = %s'
+    cursor.execute(sql,(realname, score, nickname))
     cursor.close()
     db.close()
 
