@@ -38,6 +38,7 @@ def getData(url, name, password, timeinterval = 2):
     questionlist = requests.post(web_options.getDomainDwrUrl('question'), data=web_options.getQuestionPayloads(httpsessionID, pid),
                                  headers=web_options.getHeaders(), cookies=cookies, timeout=None)
     question, content = nlp_dataclean.getQuestions(questionlist.text)
+    content = re.sub(r'&nbsp;',' ',content)
     print('问题：' + question)
     print('详情: ' + content)
     #获取页数
@@ -60,6 +61,7 @@ def getData(url, name, password, timeinterval = 2):
             datadict = dict(nlp_dataclean.getCleandict(html.text), **datadict)#合并字典，以后面字典为基准，如新字典中key值已在原字典中，不更新
         except Exception as e:
             print(e)
+            print('    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
             print('    断开连接，正在尝试重新登录......')
             i -= 1
             web_login.LoginAndSaveCookie(name, password)

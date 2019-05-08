@@ -104,9 +104,6 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         except Exception as e:
             print(e)
 
-    def showpage(self):
-        childwindow = page_show.childWindow()
-        childwindow.exec()
     #def showPage(self):
     def ifbuttoncanpush(self, i):
         if i == 0:
@@ -126,8 +123,9 @@ def main():
     myWin = MyWindow()
     childwindow = page_show.childWindow()
     myWin.sendQuestionid.connect(childwindow.pageload)
+    myWin.pushButton_showWindow.clicked.connect(childwindow.loadFromFirstButton)
     myWin.pushButton_showWindow.clicked.connect(childwindow.show)
-    myWin.pushButton_showWindow2.clicked.connect(childwindow.reloadCombobox)
+    myWin.pushButton_showWindow2.clicked.connect(childwindow.loadFromNextButton)
     myWin.pushButton_showWindow2.clicked.connect(childwindow.show)
     myWin.show()
     sys.exit(app.exec_())

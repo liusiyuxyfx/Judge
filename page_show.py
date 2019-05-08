@@ -8,11 +8,14 @@ import xlwt
 import re
 import detailpage
 class childWindow(QDialog, Ui_Dialog_showpage):
-    sendStudentDetail = pyqtSignal(str, str, str, str, str)
+    sendStudentDetail = pyqtSignal( str, int, str, str, str, str)
+    showed = False
     def __init__(self):
         QDialog.__init__(self)
         self.setupUi(self)
         #self.questionid = global_questionid
+        self.childwindow3 = DetailPage()
+        self.sendStudentDetail.connect(self.childwindow3.loadPage)
         self.label_title.setWordWrap(True)
         self.label_content.setWordWrap(True)
         self.pushButton_search.clicked.connect(self.searchStudentByName)
@@ -21,28 +24,35 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         #self.pageload(self.questionid)
         self.pushButton_getexcel.clicked.connect(self.saveAsExcel)
         self.pushButton_search.clicked.connect(self.showDetailPageByName)
-        self.reloadCombobox()
+    #从查询数据库按钮进入时
+    def loadFromFirstButton(self):
+        self.reloadCombobox(False)
         try:
             questionid = data_databaseact.searchQuestionList()[0][0]
             self.pageload(questionid)
         except:
             pass
-
+    def loadFromNextButton(self):
+        self.reloadCombobox(True)
     #加载页面
     def pageload(self, questionid):
+        print('查询数据库')
         questioninfo, rownum, scoretable = data_databaseact.searchQuestionsDetail(questionid)
+        print('查找完成')
         self.questionid = questionid
         self.label_title.setText(questioninfo[1])
         self.label_content.setText(questioninfo[2])
         self.updateTable(rownum, scoretable)
+        print('加载图片')
         self.loadPicture(questioninfo[3], self.label_wordcloud)
         self.loadPicture(questioninfo[4], self.label_numbercount)
+        print('加载完成')
 
     #表格内查询按钮
-    def queryButton(self, id):
+    def queryButton(self,row,  id):
         widget = QWidget()
         queryButton = QPushButton('详情')
-        queryButton.clicked.connect(lambda: self.searchStudentById(id))
+        queryButton.clicked.connect(lambda: self.searchStudentById(row, id))
         hLayout = QHBoxLayout()
         hLayout.addWidget(queryButton)
         hLayout.setContentsMargins(5, 2, 5, 2)
@@ -50,7 +60,7 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         return widget
 
     #加载combobox选项
-    def reloadCombobox(self):
+    def reloadCombobox(self, nextButton):
         try:
             self.comboBox.currentTextChanged.disconnect(self.loadByCombobox)
         except:
@@ -59,7 +69,8 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         questionlist = data_databaseact.searchQuestionList()
         for i in range(len(questionlist)):
             self.comboBox.addItem(questionlist[i][1],questionlist[i][0])
-        self.questionid = self.comboBox.currentData()
+        if not nextButton:
+            self.questionid = self.comboBox.currentData()
         try:
             self.comboBox.currentTextChanged.connect(self.loadByCombobox)
         except:
@@ -89,31 +100,29 @@ class childWindow(QDialog, Ui_Dialog_showpage):
     #删除问题
     def deleteQuestion(self):
         data_databaseact.deleteQuestion(self.comboBox.currentData())
-        self.reloadCombobox()
-        self.pageload(self.comboBox.itemData(1))
+        self.loadFromFirstButton()
 
     #更新表格内容
     def updateTable(self, rownum, scoretable):
         titles = ['昵称', '姓名', '成绩']
-        print('删除中')
+        #print()
         self.tableWidget.clear()
         print('删除完成')
         self.tableWidget.setRowCount(rownum)
         self.tableWidget.setColumnCount(4)
         self.tableWidget.setHorizontalHeaderLabels(titles)
         print('添加中')
-        for i in range(rownum):
-            for j in range(4):
-                if j != 3:
-                    content = scoretable[i][j]
-                    if content == '' or content == 'null':
-                        try:
-                            content = re.search(r'hrbcu[0-9]*(.*)', scoretable[i][0]).group(1)
-                        except:
-                            content = '未填写'
-                    self.tableWidget.setItem(i, j, QTableWidgetItem(str(content)))
-                else:
-                    self.tableWidget.setCellWidget(i, j, self.queryButton(scoretable[i][0]))
+        try:
+            for i in range(rownum):
+                for j in range(4):
+                    if j == 3:
+                        self.tableWidget.setCellWidget(i, j, self.queryButton(i, scoretable[i][0]))
+                    else :
+                        content = scoretable[i][j]
+                        self.tableWidget.setItem(i, j, QTableWidgetItem(str(content)))
+        except Exception as e:
+            print(e)
+
         print('添加完成')
         self.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch | QHeaderView.Stretch) #行宽自适应
 
@@ -136,37 +145,48 @@ class childWindow(QDialog, Ui_Dialog_showpage):
     def showDetailPageByName(self):
         try:
             studentinfo = data_databaseact.searchStudentByName(self.lineEdit.text(), self.questionid)
-            self.childwindow3 = DetailPage()
-            self.sendStudentDetail.connect(self.childwindow3.loadPage)
-            self.sendStudentDetail.emit(self.questionid, studentinfo[0], studentinfo[1], studentinfo[2], studentinfo[3])
-            self.childwindow3.show()
+            item = self.tableWidget.findItems(self.lineEdit.text(), Qt.MatchContains)
+            if item:
+                item = item[0]
+                row = item.row()
+                self.sendStudentDetail.emit(self.questionid, row, studentinfo[0], studentinfo[1], studentinfo[2], studentinfo[3])
+                self.childwindow3.sendRowChange.connect(self.updateRowData)
+                self.childwindow3.show()
+            else :
+                QMessageBox.warning(self,'警告','查无此人',QMessageBox.Ok)
         except Exception as e:
-            QMessageBox.critical('错误', str(e))
+            QMessageBox.critical(self, '错误', str(e), QMessageBox.Ok)
 
     #框内查询事件
-    def searchStudentById(self, id):
+    def searchStudentById(self,row, id):
      try:
          studentinfo = data_databaseact.searchStudentById(id, self.questionid)
-         self.childwindow3 = DetailPage()
-         self.sendStudentDetail.connect(self.childwindow3.loadPage)
-         self.sendStudentDetail.emit(self.questionid, studentinfo[0], studentinfo[1], studentinfo[2],
+         self.sendStudentDetail.emit(self.questionid, row, studentinfo[0], studentinfo[1], studentinfo[2],
                                      studentinfo[3])
+         self.childwindow3.sendRowChange.connect(self.updateRowData)
          self.childwindow3.show()
      except Exception as e:
-         QMessageBox.critical(self, '错误', str(e), QMessageBox.Ok)
+         QMessageBox.critical(self, '错误', str(e)+'    '+id+ '        '+self.questionid, QMessageBox.Ok)
+    def updateRowData(self,row, realname, score):
+        self.tableWidget.setItem(row, 1, QTableWidgetItem(str(realname)))
+        self.tableWidget.setItem(row, 2, QTableWidgetItem(str(score)))
 
 class DetailPage(QDialog,detailpage.Ui_Dialog_DetailPage):
+    sendRowChange = pyqtSignal(int, str, str)
     def __init__(self):
         QDialog.__init__(self)
         self.setupUi(self)
         self.pushButton_close.clicked.connect(self.close)
         self.pushButton_update.clicked.connect(self.updateData)
+
     def updateData(self):
         try:
              data_databaseact.updateStudentScore(self.questionid, self.nickname, self.lineEdit_realname.text(), self.lineEdit_score.text())
+             self.sendRowChange.emit(self.row, self.lineEdit_realname.text(), self.lineEdit_score.text())
         except Exception as e:
             QMessageBox.critical(self, '错误', str(e), QMessageBox.Ok)
-    def loadPage(self,questionid, nickname, realname, score, answer):
+    def loadPage(self, questionid,row, nickname, realname, score, answer):
+        self.row = row
         self.questionid= questionid
         self.nickname = nickname
         self.realname = realname
@@ -177,10 +197,14 @@ class DetailPage(QDialog,detailpage.Ui_Dialog_DetailPage):
         self.plainTextEdit_answer.setPlainText(answer)
         self.lineEdit_nickname.setReadOnly(True)
         self.plainTextEdit_answer.setReadOnly(True)
+
 if __name__ == '__main__':
-    global global_questionid
-    global_questionid = 'f3ed92700d11e9a286d8cb8a7fdab2mEdh5LzX'
     app = QApplication(sys.argv)
     childWindow = childWindow()
     childWindow.show()
     sys.exit(app.exec_())
+#     app = QApplication(sys.argv)
+#     loadingpage = LoadingWindow()
+#     loadingpage.show()
+#     sys.exit(app.exec_())
+#

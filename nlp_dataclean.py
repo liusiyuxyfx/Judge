@@ -30,6 +30,13 @@ def getCleandict(str):
             'gbk', 'ignore')
         realname = re.sub(r'"*', '', realname).encode('utf-8').decode('unicode_escape').encode('gbk', 'ignore').decode(
             'gbk', 'ignore')
+        if realname == '' or realname == 'null':
+            if re.search(r'hrbcu[0-9]*(.*)', realname) != None:
+                realname = re.search(r'hrbcu[0-9]*(.*)', realname).group(1)
+            elif re.search(r'{HIT|hit}[0-9]*(.*)', realname) != None:
+                realname = re.search(r'{HIT|hit}[0-9]*(.*)', realname).group(1)
+            else:
+                realname = '未填写'
         #print(nickname, realname)
         if nickname not in dict.keys():
             dict[nickname].append(re.sub(r'&nbsp;',' ',cp[1].encode('utf-8').decode('unicode_escape').encode('gbk', 'ignore').decode('gbk', 'ignore')))

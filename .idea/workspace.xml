@@ -3,10 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7758e792-5482-4c35-b686-0d1ce435f7de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cachefiles/answers.json" beforeDir="false" afterPath="$PROJECT_DIR$/cachefiles/answers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_databaseact.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_databaseact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2fb6e88e709211e9lZRtVsJA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2fee1a16709211e9gusapdKE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/418007c0709311e94lvynibL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/41b3b386709311e9N4BRgtwW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/b66aa8e0708b11e9I0SYWsVB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp_dataclean.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp_dataclean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlpfiles/CNENstopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/nlpfiles/CNENstopwords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_show.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminalshow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminalshow.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_requests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +29,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Judge$page_show.coverage" NAME="page_show Coverage Results" MODIFIED="1557237163757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$page_show.coverage" NAME="page_show Coverage Results" MODIFIED="1557286123956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$answerprocessing.coverage" NAME="answerprocessing Coverage Results" MODIFIED="1557147497778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$databaseact.coverage" NAME="databaseact Coverage Results" MODIFIED="1557207396915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$main.coverage" NAME="main Coverage Results" MODIFIED="1557239394390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$1.coverage" NAME="1 Coverage Results" MODIFIED="1557202269346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$main.coverage" NAME="main Coverage Results" MODIFIED="1557291392247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$1.coverage" NAME="1 Coverage Results" MODIFIED="1557278865336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlergetcookie.coverage" NAME="webcrawlergetcookie Coverage Results" MODIFIED="1556790587500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$web_requests.coverage" NAME="web_requests Coverage Results" MODIFIED="1557239384045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$web_requests.coverage" NAME="web_requests Coverage Results" MODIFIED="1557281061319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerlogin.coverage" NAME="webcrawlerlogin Coverage Results" MODIFIED="1556794266282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$dataclean.coverage" NAME="dataclean Coverage Results" MODIFIED="1557119292127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerlogin2.coverage" NAME="webcrawlerlogin2 Coverage Results" MODIFIED="1556676177095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -38,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+            <state relative-caret-position="1862">
+              <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
               <folding>
                 <element signature="e#63#82#0" expanded="true" />
               </folding>
@@ -51,22 +65,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_showtime.py">
+        <entry file="file://$PROJECT_DIR$/nlp_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding>
-                <element signature="e#13#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_requests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+            <state relative-caret-position="350">
+              <caret line="49" column="15" lean-forward="true" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -75,10 +86,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/3b3b6c80713611e9IJWXCYvQ.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nlpfiles/CNENstopwords.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="167" column="4" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_show.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="2046">
+              <caret line="102" column="32" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -87,45 +112,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/account.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="12" selection-start-line="4" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_databaseact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-789">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-              <folding>
-                <element signature="e#13#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mainwindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
+            <state relative-caret-position="623">
               <caret line="45" column="34" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detailpage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -133,8 +123,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/showpage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="665">
               <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/standardAnswer.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret column="269" selection-start-column="269" selection-end-column="269" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_options.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,17 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wordcloud</find>
-      <find>而是</find>
-      <find>spring</find>
-      <find>micro</find>
-      <find>Microsoft Sans Serif</find>
-      <find>Microsof</find>
-      <find>str</find>
-      <find>blob</find>
-      <find>querybutton</find>
-      <find>time.sleep(20)</find>
-      <find>print</find>
       <find>qq</find>
       <find>printth</find>
       <find>cnt</find>
@@ -180,6 +179,17 @@
       <find>show</find>
       <find>insert</find>
       <find>create</find>
+      <find>tabel</find>
+      <find>updatetabe</find>
+      <find>querybut</find>
+      <find>sendstudentdetail</find>
+      <find>content</find>
+      <find>findi</find>
+      <find>sendQuestionid</find>
+      <find>sendq</find>
+      <find>reload</find>
+      <find>delete</find>
+      <find>sendQuestion</find>
     </findStrings>
     <replaceStrings>
       <replace>html</replace>
@@ -215,7 +225,6 @@
         <option value="$PROJECT_DIR$/webcrawlerlogin.py" />
         <option value="$PROJECT_DIR$/webcrawlerrequests.py" />
         <option value="$PROJECT_DIR$/showpage.py" />
-        <option value="$PROJECT_DIR$/nlpfiles/CNENstopwords.txt" />
         <option value="$PROJECT_DIR$/account.txt" />
         <option value="$PROJECT_DIR$/showtime.py" />
         <option value="$PROJECT_DIR$/answerprocessing.py" />
@@ -224,15 +233,16 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/web_login.py" />
         <option value="$PROJECT_DIR$/nlp_AnswerProcessing.py" />
-        <option value="$PROJECT_DIR$/web_requests.py" />
         <option value="$PROJECT_DIR$/1.txt" />
+        <option value="$PROJECT_DIR$/data_showtime.py" />
+        <option value="$PROJECT_DIR$/detailpage.py" />
+        <option value="$PROJECT_DIR$/data_databaseact.py" />
         <option value="$PROJECT_DIR$/1.py" />
         <option value="$PROJECT_DIR$/nlp_dataclean.py" />
-        <option value="$PROJECT_DIR$/data_showtime.py" />
-        <option value="$PROJECT_DIR$/page_main.py" />
-        <option value="$PROJECT_DIR$/detailpage.py" />
+        <option value="$PROJECT_DIR$/web_requests.py" />
+        <option value="$PROJECT_DIR$/nlpfiles/CNENstopwords.txt" />
         <option value="$PROJECT_DIR$/page_show.py" />
-        <option value="$PROJECT_DIR$/data_databaseact.py" />
+        <option value="$PROJECT_DIR$/page_main.py" />
       </list>
     </option>
   </component>
@@ -247,6 +257,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,6 +273,11 @@
             <path>
               <item name="Judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="Judge" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Judge" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,14 +289,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
@@ -306,6 +321,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Judge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_showtime" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Judge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -320,28 +357,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_showtime.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="databaseact" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Judge" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_databaseact.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -419,10 +434,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.web_requests" />
         <item itemvalue="Python.page_show" />
+        <item itemvalue="Python.web_requests" />
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.data_showtime" />
-        <item itemvalue="Python.databaseact" />
       </list>
     </recent_temporary>
   </component>
@@ -453,12 +468,13 @@
       <workItem from="1557124563517" duration="1998000" />
       <workItem from="1557126784543" duration="25472000" />
       <workItem from="1557185643051" duration="25654000" />
-      <workItem from="1557234340632" duration="3309000" />
+      <workItem from="1557234340632" duration="3498000" />
+      <workItem from="1557274748848" duration="12144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225830000" />
+    <option name="totallyTimeSpent" value="238163000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,12 +489,12 @@
     <frame x="0" y="23" width="1920" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.18210863" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.18370607" />
       <window_info id="Structure" order="1" sideWeight="0.5008518" side_tool="true" weight="0.25239617" />
       <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.2539936" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992035" />
-      <window_info active="true" anchor="bottom" x="-43" y="704" width="937" height="236" id="Run" order="2" sideWeight="0.48722044" visible="true" weight="0.4493743" />
+      <window_info anchor="bottom" x="-43" y="704" width="937" height="236" id="Run" order="2" sideWeight="0.48722044" weight="0.22525597" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840257" weight="0.3993174" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -541,17 +557,10 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/dd505b40700311e9F3hpsVOx.png" />
-    <entry file="file://$PROJECT_DIR$/images/5b0f2aba700511e9byAf9Dd6.png" />
-    <entry file="file://$PROJECT_DIR$/images/65fd2c70700911e9eE5Whygi.png" />
-    <entry file="file://$PROJECT_DIR$/images/65c9a54e700911e9kfQE6g0R.png" />
     <entry file="file://$PROJECT_DIR$/images/c8a90272700911e9h2FiEy83.png" />
     <entry file="file://$PROJECT_DIR$/images/c8da481e700911e9hG0dtoDw.png" />
     <entry file="file://$PROJECT_DIR$/images/deef436c700811e99dWo0lkp.png" />
     <entry file="file://$PROJECT_DIR$/images/5217a51a700811e9Jt34ALMa.png" />
-    <entry file="file://$PROJECT_DIR$/terminalshow.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/string.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2189" />
@@ -595,72 +604,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cachefiles/wordcloud.png" />
     <entry file="file://$PROJECT_DIR$/cachefiles/numbercount.png" />
-    <entry file="file://$PROJECT_DIR$/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="26" column="106" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_dataclean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_AnswerProcessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="88" column="25" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="45" />
-          <folding>
-            <element signature="e#13#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/75f020b0708b11e9ALWuvcQk.png" />
     <entry file="file://$PROJECT_DIR$/images/89c7d7a4708b11e9DlCOUgFX.png" />
-    <entry file="file://$PROJECT_DIR$/nlpfiles/CNENstopwords.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/8992bb78708b11e9JgunRv3W.png" />
     <entry file="file://$PROJECT_DIR$/images/7623e4c2708b11e9KNYDjGfo.png" />
-    <entry file="file://$PROJECT_DIR$/standardAnswer.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret column="269" selection-start-column="269" selection-end-column="269" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4815">
@@ -682,7 +631,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/account.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detailpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/b66aa8e0708b11e9I0SYWsVB.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/images/418007c0709311e94lvynibL.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/41b3b386709311e9N4BRgtwW.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/2fee1a16709211e9gusapdKE.png">
@@ -691,25 +663,23 @@
     <entry file="file://$PROJECT_DIR$/images/2fb6e88e709211e9lZRtVsJA.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/41b3b386709311e9N4BRgtwW.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/b66aa8e0708b11e9I0SYWsVB.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/b636430c708b11e9edWhxZPb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showpage.py">
+    <entry file="file://$PROJECT_DIR$/1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="142">
+          <caret line="26" column="106" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_showtime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
+        <state relative-caret-position="-137">
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="e#13#44#0" expanded="true" />
@@ -717,33 +687,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detailpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_show.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_databaseact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-789">
+        <state relative-caret-position="825">
           <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="e#13#27#0" expanded="true" />
@@ -751,29 +697,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_requests.py">
+    <entry file="file://$PROJECT_DIR$/nlp_AnswerProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        <state relative-caret-position="495">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#13#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp_dataclean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/3b7279dc713611e92IHFy5RD.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/dcccd1ba712711e9DALmolU3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/dd040716712711e9S5pZPTsI.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/3b3b6c80713611e9IJWXCYvQ.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlpfiles/CNENstopwords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="167" column="4" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mainwindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="623">
           <caret line="45" column="34" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+        <state relative-caret-position="1862">
+          <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
           <folding>
             <element signature="e#63#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_show.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="102" column="32" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminalshow.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/standardAnswer.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret column="269" selection-start-column="269" selection-end-column="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="49" column="15" lean-forward="true" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
