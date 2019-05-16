@@ -63,9 +63,13 @@ def getWordCloud(url):
                           height=290,
                           )
     # print(''.join(seganswerdoc))
+    print('  + 开始作画')
     wordcloud.generate_from_text(url)
+    print('  + 作画完成')
     imgid = getUniqueId()
+    print('  + 正在保存')
     wordcloud.to_file(imagepath(imgid))
+    print('  + 保存成功')
     return imgid
 
 # app = QApplication(sys.argv)
@@ -76,8 +80,6 @@ if __name__ == '__main__':
     from showpage import *
     from PyQt5.QtCore import *
     from PyQt5.QtGui import *
-    from Mainwindow import *
-    from terminalshow import *
     # plt.use("Qt5Agg")
     from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
     from matplotlib.figure import Figure

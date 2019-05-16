@@ -26,27 +26,36 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         self.pushButton_search.clicked.connect(self.showDetailPageByName)
     #从查询数据库按钮进入时
     def loadFromFirstButton(self):
-        self.reloadCombobox(False)
         try:
-            questionid = data_databaseact.searchQuestionList()[0][0]
-            self.pageload(questionid)
-        except:
-            pass
+            self.reloadCombobox(False)
+        except Exception as e:
+            print(e)
+
     def loadFromNextButton(self):
-        self.reloadCombobox(True)
+        try:
+            self.reloadCombobox(True)
+        except Exception as e:
+            print(e)
     #加载页面
     def pageload(self, questionid):
-        print('查询数据库')
-        questioninfo, rownum, scoretable = data_databaseact.searchQuestionsDetail(questionid)
-        print('查找完成')
-        self.questionid = questionid
-        self.label_title.setText(questioninfo[1])
-        self.label_content.setText(questioninfo[2])
-        self.updateTable(rownum, scoretable)
-        print('加载图片')
-        self.loadPicture(questioninfo[3], self.label_wordcloud)
-        self.loadPicture(questioninfo[4], self.label_numbercount)
-        print('加载完成')
+        try:
+            print('查询数据库 + Questionid：%s' % questionid)
+            questioninfo, rownum, scoretable = data_databaseact.searchQuestionsDetail(questionid)
+            print('查找完成')
+            self.questionid = questionid
+            print('加载图片')
+            self.loadPicture(questioninfo[3], self.label_wordcloud)
+            self.loadPicture(questioninfo[4], self.label_numbercount)
+            print('wordcloud path: %s' % questioninfo[3])
+            QApplication.processEvents()
+            print('numbercount path: %s ' % questioninfo[4])
+            QApplication.processEvents()
+            self.label_title.setText(questioninfo[1])
+            self.label_content.setText(questioninfo[2])
+            self.updateTable(rownum, scoretable)
+            print('页面加载完成')
+        except Exception as e:
+            print(e)
 
     #表格内查询按钮
     def queryButton(self,row,  id):
@@ -67,17 +76,21 @@ class childWindow(QDialog, Ui_Dialog_showpage):
             pass
         self.comboBox.clear()
         questionlist = data_databaseact.searchQuestionList()
+        self.questionid = questionlist[0][0]
         for i in range(len(questionlist)):
             self.comboBox.addItem(questionlist[i][1],questionlist[i][0])
         if not nextButton:
-            self.questionid = self.comboBox.currentData()
+            self.pageload(self.questionid)
+        self.comboBox.setCurrentIndex(self.comboBox.findData(self.questionid))
         try:
             self.comboBox.currentTextChanged.connect(self.loadByCombobox)
         except:
             pass
 
+
     #combobox选择事件
     def loadByCombobox(self):
+        print('Combobox Text changed')
         self.questionid = self.comboBox.currentData()
         print(self.questionid)
         self.pageload(self.questionid)
@@ -93,25 +106,29 @@ class childWindow(QDialog, Ui_Dialog_showpage):
             QMessageBox.critical(self, "错误", "查无此人", QMessageBox.Ok)
 
     #加载图片
-    def loadPicture(self,name,widget):
+    def loadPicture(self,name, widget):
+        print('./images/' + name + '.png')
         pix = QPixmap('./images/' + name + '.png')
+        widget.clear()
         widget.setPixmap(pix)
 
     #删除问题
     def deleteQuestion(self):
         data_databaseact.deleteQuestion(self.comboBox.currentData())
         self.loadFromFirstButton()
+        self.comboBox.showPopup()
 
     #更新表格内容
     def updateTable(self, rownum, scoretable):
         titles = ['昵称', '姓名', '成绩']
         #print()
-        self.tableWidget.clear()
-        print('删除完成')
+        #self.tableWidget.clear()
+        self.tableWidget.setRowCount(0)
+        print('表格内容删除完成')
         self.tableWidget.setRowCount(rownum)
         self.tableWidget.setColumnCount(4)
         self.tableWidget.setHorizontalHeaderLabels(titles)
-        print('添加中')
+        print('表格内容添加中')
         try:
             for i in range(rownum):
                 for j in range(4):
@@ -120,10 +137,11 @@ class childWindow(QDialog, Ui_Dialog_showpage):
                     else :
                         content = scoretable[i][j]
                         self.tableWidget.setItem(i, j, QTableWidgetItem(str(content)))
+                #QApplication.processEvents()
         except Exception as e:
             print(e)
 
-        print('添加完成')
+        print('表格内容添加完成')
         self.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch | QHeaderView.Stretch) #行宽自适应
 
     def saveAsExcel(self):

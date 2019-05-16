@@ -23,6 +23,7 @@ class webAnalyze(QThread):
             print(global_url, global_name, global_password)
             question, content , islogin = web_requests.getData(global_url, global_name, global_password, global_timeinterval)
             scoredict, wordcloudblob, numberlist, averagescore = nlp_AnswerProcessing.calculate(global_standardAnswer)
+            print('绘制完成')
             self.dbsignal.emit(question, content, scoredict, wordcloudblob, numberlist, averagescore)
         except Exception as e:
             print (e)
@@ -41,19 +42,15 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         super(MyWindow, self).__init__(parent)
         self.setupUi(self)
         self.pushButton_showWindow2.setEnabled(False)
-        sys.stdout = EmittingStream(textWritten=self.outputWritten)
-        sys.stderr = EmittingStream(textWritten=self.outputWritten)
-        #绑定线程信号
+        # sys.stdout = EmittingStream(textWritten=self.outputWritten)
+        # sys.stderr = EmittingStream(textWritten=self.outputWritten)
+        # #绑定线程信号
         self.threadmisson.buttonclicked.connect(self.ifbuttoncanpush)
         self.threadmisson.dbsignal.connect(self.saveDatabase)
-
-        # self.threadmisson.stopsignal.connect(self.stopthread)
-        # self.pushButton_cancel.clicked.connect(self.stopthread)
 
         #绑定窗口信号
         self.pushButton_getScore.clicked.connect(self.onclick)
         self.pushButton_showWindow2.clicked.connect(self.sendQuestion)
-
 
         self.lineEdit_url.setText('https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=8b2564ba9a21437fa6e40053c1f9ef35#/learn/forumdetail?pid=1005050559')
         self.lineEdit_name.setText('18324605567@163.com')
@@ -83,7 +80,6 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         elif standardAnswer == '' :
             QMessageBox.critical(self, "错误", "请输入标准答案!!", QMessageBox.Ok)
         else :
-            #print(type(self.plainTextEdit_standardanswer.toPlainText()))
             global global_url , global_name, global_standardAnswer, global_password, global_timeinterval
             global_url = self.lineEdit_url.text()
             global_name = self.lineEdit_name.text()
@@ -91,7 +87,6 @@ class MyWindow(QMainWindow, Ui_MainWindow):
             global_timeinterval = self.lineEdit_time.text()
             global_standardAnswer = self.plainTextEdit_standardanswer.toPlainText()
             self.threadmisson.start()
-        # self.threadmisson.stopsignal.connect(self.stopthread)
 
     def saveDatabase(self,question, content, scoredict, wordcloudblob, numberlist, averagescore):
         try:

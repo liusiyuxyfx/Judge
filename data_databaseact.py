@@ -140,15 +140,19 @@ def autocreateQuestion(title, detail, wordcloudpath, numbercountpath, scoresdict
 
 #查询问题详情
 def searchQuestionsDetail(questionid):
-    db, cursor = connectDB()
-    sql = ('select * from studentscore.questioninfo where id = %s')
-    cursor.execute(sql, questionid)
-    questioninfo = cursor.fetchone()
-    sql = ('select nickname, realname, score from studentscore.' + tablename(questionid))
-    cursor.execute(sql)
-    rownum = cursor.rowcount
-    scoretable = cursor.fetchall()
-    #print(scoretable)
+    try:
+        db, cursor = connectDB()
+        sql = ('select * from studentscore.questioninfo where id = %s')
+        cursor.execute(sql, questionid)
+        questioninfo = cursor.fetchone()
+        sql = ('select nickname, realname, score from studentscore.' + tablename(questionid))
+        cursor.execute(sql)
+        rownum = cursor.rowcount
+        scoretable = cursor.fetchall()
+        #print(scoretable)
+    except Exception as e:
+        print (e)
+        print ('select * from questioninfo where id = %s' % questionid)
     cursor.close()
     db.close()
     return questioninfo, rownum, scoretable
@@ -232,39 +236,3 @@ def updateStudentScore(questionid, nickname, realname, score):
     cursor.close()
     db.close()
 
-
-def connectDB2():
-    try:
-        db = pymysql.connect(host="localhosts",
-                             user="root",
-                             password="richardliu",
-                             database="STUDENTSCORE",
-                             charset="utf8")
-        db.autocommit(True)
-        cursor = db.cursor()
-    except Exception as e:
-        print(e)
-
-        #pass
-def b(i):
-    try:
-        connectDB2()
-    except Exception as e:
-        raise Exception('登录失败')
-    if i == 4:
-        raise Exception('buasd')
-    b = 1 / i
-
-def a():
-    b(4)
-if __name__ == '__main__':
-    print(getLatestId())
-    #print(getUniqueQuestionId())
-    # try:
-    #     a()
-    # except Exception as e:
-    #     print(e)
-    # print(list(range(1, 6)))
-    #print('2'.isdigit())
-    #a(2)
-   #print(getUniqueQuestionId())

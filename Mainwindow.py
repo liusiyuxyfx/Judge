@@ -263,7 +263,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "密码："))
         self.label_3.setText(_translate("MainWindow", "网址："))
         self.label_4.setText(_translate("MainWindow", "标准答案："))
-        self.label_5.setText(_translate("MainWindow", "中国大学MOOC学生问答优劣自动评价系统"))
+        self.label_5.setText(_translate("MainWindow", "MOOC平台中的问题解答自动评价系统"))
         self.pushButton_getScore.setText(_translate("MainWindow", "获取成绩"))
         self.label_6.setText(_translate("MainWindow", "控制台:"))
         self.pushButton_showWindow2.setText(_translate("MainWindow", "下一步"))
