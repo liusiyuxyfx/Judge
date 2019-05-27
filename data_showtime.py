@@ -17,12 +17,12 @@ def getUniqueId():
     imgid  = imgid + ran_str
     return imgid
 def getNumberCount(numberlist, averagescorelist):
-
+    plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
+    plt.rcParams['font.family'] = 'sans-serif'
     fig =plt.figure(num=1, figsize=(5.5, 2.9), dpi=100)
     axes = fig.add_subplot(111)
     x = range(len(numberlist))
     xlist = ['0', '0~40', '40~50', '50~60', '60~70', '70~80', '80~90', '90~100']
-    # xlist2 = ['0~40', '40~50', '50~60', '60~70', '70~80', '80~90', '90~100']
     colors = ['orangered', 'darksalmon', 'pink', 'blanchedalmond', 'paleturquoise', 'aquamarine', 'springgreen']
 
     # 条形图
@@ -42,7 +42,7 @@ def getNumberCount(numberlist, averagescorelist):
     ax2 = axes.twinx()
     ax2.set_ylabel(u'平均分')
     x = np.arange(len(xlist))
-    ax2.plot(averagescorelist, c='y', marker='o', color='cornflowerblue')
+    ax2.plot(averagescorelist, marker='o', color='cornflowerblue')
     for a, b in zip(x, averagescorelist):
         ax2.text(a, b, str(b),  ha="center", va="bottom", color='cornflowerblue')
     # self.draw()
@@ -88,4 +88,4 @@ if __name__ == '__main__':
      ll 生活 有助于 更好 生活 学习 发展 内容 发现 特别 难懂 学习 生活 太 理论化 内容 生活 有助于 更好 生活 学习 发展 内容 发现 特别 难懂 学习 生活 太 理论化 内容 """
     numberlist = [123, 312, 313, 323, 123, 123, 123]
     averagescorelist = [123, 123, 132, 53, 23, 234, 211]
-    print(getnumberCount(numberlist, averagescorelist))
+    print(getNumberCount(numberlist, averagescorelist))

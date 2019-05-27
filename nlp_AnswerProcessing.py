@@ -5,7 +5,6 @@ import nlp_tfidf
 import web_options
 from collections import defaultdict
 import data_showtime
-import time
 def getSegString(sentence):
     segpart = jieba.cut(sentence, cut_all=False)  # ·Ö´Ê
     # È¥³ýÍ£ÓÃ´Ê

@@ -87,18 +87,18 @@ if __name__ == '__main__':
     import data_databaseact
     import data_showtime
 
-    # name = '18324605567@163.com'
-    # password = 'yf691111'
-    # url = 'https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=8b2564ba9a21437fa6e40053c1f9ef35#/learn/forumdetail?pid=1005050559'
-    standardAnswer = """
-     电脑要解决的问题有许多，提高cpu性能提高计算机对数据的处理能力，互联网 的覆盖面问题等。计算思维是学习计算机语言的基础，通过学习计算思维，才能真正掌握计算机语言，学会用计算机语言去解决一系列的问题，况且计算思维不单单只为编程服务，它
-还能帮助我们解决生活中的许许多多的问题。计算思维是学习计算机语言的基础，通过学习计算思维，才能真正掌握计算机语言，学会用计算机语言去解决一系列的
-问题，况且计算思维不单单只为编程服务，它还能帮助我们解决生活中的许许多多的问题。"""
-    # question, content, islogin = getData(url, name, password, 0)
-    scoredict, wordcloudblob, numberlist, averagescore = nlp_AnswerProcessing.calculate(standardAnswer)
-    print('  + 绘制条形图.....')
-    numberlistpath = data_showtime.getNumberCount(numberlist, averagescore)
-    print('  + 绘制完成!')
-    data_databaseact.autocreateQuestion('【讨论1-1】计算思维对你所学习、从事的学科、专业有价值吗？', """你认为计算思维对你所学习、从事的学科、专业有价值吗？有哪些价值？能否与大家讨论、分享一下你的见解和观点。提示：你所学习和从事的专业是什么？什么是计算思维和有哪些计算思维？你的专业怎样或可能怎样利用计算思维？，大家可以畅想一番！""", wordcloudblob, numberlistpath, scoredict)
-    print('================================')
-    print('分析完成，请点击下一步')
+    name = '18324605567@163.com'
+    password = 'yf691111'
+    url = 'https://www.icourse163.org/spoc/learn/COMPUTER-1002604037?tid=1002792051&_trace_c_p_k2_=8b2564ba9a21437fa6e40053c1f9ef35#/learn/forumdetail?pid=1005050559'
+#     standardAnswer = """
+#      电脑要解决的问题有许多，提高cpu性能提高计算机对数据的处理能力，互联网 的覆盖面问题等。计算思维是学习计算机语言的基础，通过学习计算思维，才能真正掌握计算机语言，学会用计算机语言去解决一系列的问题，况且计算思维不单单只为编程服务，它
+# 还能帮助我们解决生活中的许许多多的问题。计算思维是学习计算机语言的基础，通过学习计算思维，才能真正掌握计算机语言，学会用计算机语言去解决一系列的
+# 问题，况且计算思维不单单只为编程服务，它还能帮助我们解决生活中的许许多多的问题。"""
+#     # question, content, islogin = getData(url, name, password, 0)
+#     scoredict, wordcloudblob, numberlist, averagescore = nlp_AnswerProcessing.calculate(standardAnswer)
+#     print('  + 绘制条形图.....')
+#     numberlistpath = data_showtime.getNumberCount(numberlist, averagescore)
+#     print('  + 绘制完成!')
+#     data_databaseact.autocreateQuestion('【讨论1-1】计算思维对你所学习、从事的学科、专业有价值吗？', """你认为计算思维对你所学习、从事的学科、专业有价值吗？有哪些价值？能否与大家讨论、分享一下你的见解和观点。提示：你所学习和从事的专业是什么？什么是计算思维和有哪些计算思维？你的专业怎样或可能怎样利用计算思维？，大家可以畅想一番！""", wordcloudblob, numberlistpath, scoredict)
+#     print('================================')
+#     print('分析完成，请点击下一步')

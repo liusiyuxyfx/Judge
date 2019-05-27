@@ -10,7 +10,6 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QMessageBox
 from Mainwindow import *
 from showpage import *
 import data_showtime
-import faulthandler
 import page_show
 class webAnalyze(QThread):
     buttonclicked = pyqtSignal(int)
@@ -42,8 +41,8 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         super(MyWindow, self).__init__(parent)
         self.setupUi(self)
         self.pushButton_showWindow2.setEnabled(False)
-        # sys.stdout = EmittingStream(textWritten=self.outputWritten)
-        # sys.stderr = EmittingStream(textWritten=self.outputWritten)
+        sys.stdout = EmittingStream(textWritten=self.outputWritten)
+        sys.stderr = EmittingStream(textWritten=self.outputWritten)
         # #绑定线程信号
         self.threadmisson.buttonclicked.connect(self.ifbuttoncanpush)
         self.threadmisson.dbsignal.connect(self.saveDatabase)

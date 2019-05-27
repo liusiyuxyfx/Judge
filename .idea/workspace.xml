@@ -2,25 +2,688 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7758e792-5482-4c35-b686-0d1ce435f7de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1.python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mainwindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cachefiles/answers.json" beforeDir="false" afterPath="$PROJECT_DIR$/cachefiles/answers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/cachefiles/moocCookies.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_databaseact.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_databaseact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_showtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_showtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3b3b6c80713611e9IJWXCYvQ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3b7279dc713611e92IHFy5RD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9e73afbe714611e9c1N5dlSm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9ea7d316714611e9DvF5K4ne.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/aa673ce2713611e9Kluynq5z.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/aa9d3716713611e96e9rw3U4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cf6914f6713711e97I184ZBP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cf9b87f6713711e98p26fQaW.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/f2a95358713811e9bYdf3DBT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/f2dc2c06713811e9R9sw5yWP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mathtypemac/MathType 7.4.1.458 macOS/mathtype-mac.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mathtypemac/下载说明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mathtypemac/第七下载.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10de61aa779d11e9n69GPeM8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1110237a779d11e9ovdDXjiR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/59fb83b4779211e9Pxy36HOG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5a45c028779211e95n2wqZDI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp_AnswerProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp_AnswerProcessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_show.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/standardAnswer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3-py3.7-nspkg.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3.dist-info/namespace_packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.0.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_animation_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_animation_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_cm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_cm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_constrained_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_constrained_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_contour.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_contour.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_image.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_image.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_layoutbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_layoutbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_path.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_path.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_pylab_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_pylab_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_qhull.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_qhull.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_tri.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_tri.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/afm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/afm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/animation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/artist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/artist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axes/_axes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axes/_axes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axes/_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axes/_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axes/_subplots.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axes/_subplots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/axis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_bases.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_bases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_backend_agg.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_backend_agg.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_backend_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_backend_tk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_gtk3_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_macosx.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_macosx.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_tkagg.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/_tkagg.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_cairo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_cairo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_gtk3.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_gtk3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_gtk3agg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_gtk3agg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_gtk3cairo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_gtk3cairo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_macosx.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_macosx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_mixed.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_mixed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_nbagg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_nbagg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_pdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_pgf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_pgf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_ps.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_ps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_qt5cairo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_qt5cairo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_svg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_svg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_webagg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_webagg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_webagg_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_webagg_core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_wx.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_wx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_wxagg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/backend_wxagg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/qt_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/qt_compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/qt_editor/figureoptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/qt_editor/figureoptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/qt_editor/formlayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/qt_editor/formlayout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/tkagg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/tkagg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/jquery/js/jquery-1.11.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/jquery/js/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/js/mpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/js/mpl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/js/nbagg_mpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/js/nbagg_mpl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/windowing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/windowing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/wx_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backends/wx_compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/bezier.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/bezier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/blocking_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/blocking_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/cbook/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/cbook/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/cbook/deprecation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/cbook/deprecation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/cm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/cm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/colorbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/colorbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/container.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/contour.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/contour.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/dates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/docstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/docstring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/dviread.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/dviread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/font_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/font_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/fontconfig_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/fontconfig_pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/ft2font.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/ft2font.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/gridspec.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/gridspec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/hatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/hatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/legend.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/legend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/legend_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/legend_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/lines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/lines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/markers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/markers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mathtext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mathtext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mlab.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mlab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/local.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/stylelib/_classic_test.mplstyle" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/stylelib/_classic_test.mplstyle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/offsetbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/offsetbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/patches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/path.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/patheffects.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/patheffects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/projections/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/projections/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/projections/geo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/projections/geo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/projections/polar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/projections/polar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/pylab.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/pylab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/pyplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/pyplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/quiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/quiver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/rcsetup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/rcsetup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sankey.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sankey.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/scale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sphinxext/mathmpl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sphinxext/mathmpl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sphinxext/plot_directive.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sphinxext/plot_directive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sphinxext/tests/test_tinypages.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/sphinxext/tests/test_tinypages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/spines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/spines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/stackplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/stackplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/streamplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/streamplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/style/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/style/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/compare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/determinism.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/determinism.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/disable_internet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/disable_internet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/Duration.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/Duration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/Epoch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/Epoch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/EpochConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/EpochConverter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/StrConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/StrConverter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/UnitDbl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/UnitDbl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/UnitDblConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/UnitDblConverter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/UnitDblFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/UnitDblFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/testing/jpl_units/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_afm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_afm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_agg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_agg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_animation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_arrow_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_arrow_patches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_artist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_artist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_axes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_axes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_bases.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_bases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_nbagg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_nbagg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_pdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_ps.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_ps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_qt4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_qt5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_svg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backend_svg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backends_interactive.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_backends_interactive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_cbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_cbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_colorbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_colorbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_constrainedlayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_constrainedlayout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_contour.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_contour.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_cycles.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_cycles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_dates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_font_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_font_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_legend.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_legend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_lines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_lines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_mathtext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_mathtext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_mlab.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_mlab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_patches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_preprocess_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_preprocess_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_pyplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_pyplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_quiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_quiver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_rcparams.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_rcparams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_sankey.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_sankey.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_scale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_simplification.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_simplification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_skew.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_skew.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_streamplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_streamplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_style.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_style.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_ticker.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_ticker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_tightlayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_tightlayout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_transforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_transforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_triangulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_triangulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_units.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_units.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_usetex.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_usetex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tests/test_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/texmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/texmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/textpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/textpath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/ticker.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/ticker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tight_bbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tight_bbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tight_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tight_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/transforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/transforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/triangulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/triangulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/tricontour.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/tricontour.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/trifinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/trifinder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/triinterpolate.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/triinterpolate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/tripcolor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/tripcolor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/trirefine.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/trirefine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/tritools.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/tri/tritools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/ttconv.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/ttconv.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/units.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/units.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid/axes_rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid/axes_rgb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/anchored_artists.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/anchored_artists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_divider.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_divider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_grid.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_grid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_rgb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/axes_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/colorbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/colorbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/inset_locator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/inset_locator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/mpl_axes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/mpl_axes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/parasite_axes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axes_grid1/parasite_axes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/angle_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/angle_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/axis_artist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/axis_artist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/axisline_style.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/axisline_style.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/axislines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/axislines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/clip_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/clip_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/floating_axes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/floating_axes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/grid_finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/grid_finder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/grid_helper_curvelinear.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/axisartist/grid_helper_curvelinear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/art3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/art3d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axes3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axes3d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axis3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axis3d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/proj3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/mplot3d/proj3d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_axes_grid1/image_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_axes_grid1/image_grid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/bar3d_notshaded.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/bar3d_notshaded.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/bar3d_shaded.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/bar3d_shaded.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/mixedsubplot.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/mixedsubplot.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/mixedsubplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/mixedsubplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/surface3d_shaded.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/surface3d_shaded.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/text3d.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/text3d.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/text3d.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/text3d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/text3d.svg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/text3d.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/trisurf3d_shaded.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/trisurf3d_shaded.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-alpha.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-alpha.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-edge-style.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-edge-style.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-named-colors.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-named-colors.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-rgb-data.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-rgb-data.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-simple.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-simple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-xyz.png" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/baseline_images/test_mplot3d/voxels-xyz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axes_grid1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axes_grid1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axisartist_angle_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axisartist_angle_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axisartist_axislines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axisartist_axislines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axisartist_floating_axes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_axisartist_floating_axes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_mplot3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/mpl_toolkits/tests/test_mplot3d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scikit_learn-0.20.3.dist-info/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scikit_learn-0.20.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scikit_learn-0.20.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scikit_learn-0.20.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scikit_learn-0.20.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scikit_learn-0.20.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/_build_utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/_build_utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/calibration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_feature_agglomeration.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_feature_agglomeration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_hierarchical.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_hierarchical.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_k_means.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_k_means.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/affinity_propagation_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/affinity_propagation_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/bicluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/bicluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/birch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/birch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/dbscan_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/dbscan_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/hierarchical.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/hierarchical.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/k_means_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/k_means_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/mean_shift_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/mean_shift_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/spectral.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/spectral.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_affinity_propagation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_affinity_propagation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_bicluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_bicluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_hierarchical.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_hierarchical.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_k_means.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_k_means.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_mean_shift.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_mean_shift.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_spectral.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cluster/tests/test_spectral.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/_column_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/_column_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/_target.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/_target.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/tests/test_column_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/tests/test_column_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/tests/test_target.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/compose/tests/test_target.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/elliptic_envelope.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/elliptic_envelope.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/empirical_covariance_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/empirical_covariance_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/graph_lasso_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/graph_lasso_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/robust_covariance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/robust_covariance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/shrunk_covariance_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/shrunk_covariance_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/tests/test_graph_lasso.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/tests/test_graph_lasso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/tests/test_graphical_lasso.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/covariance/tests/test_graphical_lasso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cross_decomposition/cca_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cross_decomposition/cca_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cross_decomposition/pls_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cross_decomposition/pls_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cross_decomposition/tests/test_pls.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/cross_decomposition/tests/test_pls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/california_housing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/california_housing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/covtype.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/covtype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/covtype.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/covtype.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/diabetes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/diabetes.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/digits.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/digits.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/kddcup99.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/kddcup99.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/wine_data.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/descr/wine_data.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/images/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/images/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/kddcup99.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/kddcup99.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/lfw.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/lfw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/mlcomp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/mldata.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/mldata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/openml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/openml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/rcv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/rcv1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/samples_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/samples_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/species_distributions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/species_distributions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/svmlight_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/svmlight_format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_lfw.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_lfw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_openml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_openml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_rcv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_rcv1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_samples_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_samples_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_svmlight_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/datasets/tests/test_svmlight_format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/_online_lda.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/_online_lda.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/cdnmf_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/cdnmf_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/dict_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/dict_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/factor_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/factor_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/fastica_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/fastica_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/incremental_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/incremental_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/kernel_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/kernel_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/nmf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/nmf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/online_lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/online_lda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/sparse_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/sparse_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_dict_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_dict_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_fastica.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_fastica.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_kernel_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_kernel_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_nmf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_nmf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_online_lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_online_lda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_sparse_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_sparse_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_truncated_svd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/tests/test_truncated_svd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/truncated_svd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/decomposition/truncated_svd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/discriminant_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/discriminant_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/dummy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/dummy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/_gradient_boosting.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/_gradient_boosting.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/bagging.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/bagging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/forest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/gradient_boosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/gradient_boosting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/iforest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/iforest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/partial_dependence.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/partial_dependence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_bagging.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_bagging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_forest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_gradient_boosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_gradient_boosting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_gradient_boosting_loss_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_gradient_boosting_loss_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_iforest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_iforest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_partial_dependence.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_partial_dependence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_voting_classifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_weight_boosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/tests/test_weight_boosting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/voting_classifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/weight_boosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/ensemble/weight_boosting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/_pilutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/_pilutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/funcsigs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_dask.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_memmapping_reducer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_memory_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_parallel_backends.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/_store_backends.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/backports.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/compressor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/disk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/executor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/_posix_reduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/_posix_wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/_win_reduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/_win_wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/compat_posix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/compat_win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/fork_exec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/managers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/popen_loky_posix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/popen_loky_win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/queues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/reduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/semaphore_tracker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/semlock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/spawn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/synchronize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/backend/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/cloudpickle_wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/process_executor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/loky/reusable_executor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/format_stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/func_inspect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/hashing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/memory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/my_exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/numpy_pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/numpy_pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/numpy_pickle_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/numpy_pickle_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/parallel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/pool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/joblib/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/externals/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/dict_vectorizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/dict_vectorizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/hashing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/hashing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_dict_vectorizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_dict_vectorizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_feature_hasher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_feature_hasher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/tests/test_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/from_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/from_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/mutual_info_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/mutual_info_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/rfe.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/rfe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_feature_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_feature_select.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_from_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_from_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_mutual_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_mutual_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_rfe.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/tests/test_rfe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/univariate_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/feature_selection/univariate_selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/gpc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/gpc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/gpr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/gpr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/kernels.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/kernels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/tests/test_gpc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/tests/test_gpc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/tests/test_gpr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/tests/test_gpr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/tests/test_kernels.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/gaussian_process/tests/test_kernels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/impute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/isotonic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/isotonic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/kernel_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/kernel_approximation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/kernel_ridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/kernel_ridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/cd_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/cd_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/coordinate_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/coordinate_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/huber.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/huber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/least_angle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/least_angle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/logistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/omp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/omp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/passive_aggressive.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/passive_aggressive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/randomized_l1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/ransac.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/ransac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/ridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/ridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/sag.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/sag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/sag_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/sag_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/sgd_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/sgd_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/stochastic_gradient.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/stochastic_gradient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_coordinate_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_coordinate_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_huber.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_huber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_least_angle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_least_angle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_logistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_omp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_omp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_passive_aggressive.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_passive_aggressive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_randomized_l1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_ransac.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_ransac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_ridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_ridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_sag.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_sag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_sgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_sgd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_sparse_coordinate_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_sparse_coordinate_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_theil_sen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/tests/test_theil_sen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/theil_sen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/linear_model/theil_sen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/isomap.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/isomap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/locally_linear.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/locally_linear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/spectral_embedding_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/spectral_embedding_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/t_sne.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/t_sne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/tests/test_t_sne.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/manifold/tests/test_t_sne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/bicluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/bicluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/expected_mutual_info_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/expected_mutual_info_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/supervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/supervised.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/tests/test_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/tests/test_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/tests/test_supervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/tests/test_supervised.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/tests/test_unsupervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/tests/test_unsupervised.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/unsupervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/cluster/unsupervised.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/pairwise.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/pairwise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/pairwise_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/pairwise_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/ranking.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/ranking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/scorer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/scorer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_pairwise.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_pairwise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_ranking.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_ranking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_score_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/metrics/tests/test_score_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/bayesian_mixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/bayesian_mixture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/gaussian_mixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/gaussian_mixture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/tests/test_bayesian_mixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/tests/test_bayesian_mixture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/tests/test_gaussian_mixture.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/mixture/tests/test_gaussian_mixture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/_split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/tests/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/tests/test_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/tests/test_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/tests/test_split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/tests/test_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/model_selection/tests/test_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/multiclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/multiclass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/multioutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/multioutput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/naive_bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/approximate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/ball_tree.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/ball_tree.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/dist_metrics.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/dist_metrics.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/kd_tree.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/kd_tree.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/lof.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/lof.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/quad_tree.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/quad_tree.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_approximate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_ball_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_ball_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_dist_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_dist_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_kd_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_kd_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_kde.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_kde.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_lof.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_lof.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/tests/test_neighbors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/typedefs.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/typedefs.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/unsupervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neighbors/unsupervised.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/_stochastic_optimizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/_stochastic_optimizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/multilayer_perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/rbm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/rbm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/tests/test_mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/tests/test_mlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/tests/test_rbm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/tests/test_rbm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/tests/test_stochastic_optimizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/neural_network/tests/test_stochastic_optimizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/_discretization.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/_discretization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/_encoders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/_function_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/_function_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/imputation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/imputation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_discretization.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_discretization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_encoders.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_encoders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_function_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_function_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_imputation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_imputation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/preprocessing/tests/test_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/random_projection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/random_projection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/semi_supervised/label_propagation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/semi_supervised/label_propagation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/semi_supervised/tests/test_label_propagation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/semi_supervised/tests/test_label_propagation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/liblinear.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/liblinear.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/libsvm.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/libsvm.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/libsvm_sparse.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/libsvm_sparse.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/tests/test_bounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/tests/test_bounds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/tests/test_sparse.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/tests/test_sparse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/tests/test_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/svm/tests/test_svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_calibration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_discriminant_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_discriminant_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_docstring_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_docstring_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_dummy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_dummy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_impute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_isotonic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_isotonic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_kernel_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_kernel_approximation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_metaestimators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_metaestimators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_multiclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_multiclass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_multioutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_multioutput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_naive_bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_random_projection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_random_projection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_site_joblib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tests/test_site_joblib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_criterion.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_criterion.pxd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_splitter.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_splitter.pxd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_utils.pxd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/_utils.pxd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/export.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/tests/test_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/tests/test_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/tests/test_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/tests/test_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/tree/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_joblib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_joblib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/_scipy_sparse_lsqr_backport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/arpack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/bench.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/class_weight.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/class_weight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/deprecation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/deprecation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/estimator_checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/estimator_checks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/extmath.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/extmath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/fast_dict.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/fast_dict.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/fixes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/fixes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/lgamma.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/lgamma.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/linear_assignment_.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/linear_assignment_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/metaestimators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/metaestimators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/mocking.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/mocking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/multiclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/multiclass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/random.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/seq_dataset.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/seq_dataset.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsefuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsefuncs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsetools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsetools/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/sparsetools/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_bench.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_deprecation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_deprecation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_estimator_checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_estimator_checks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_extmath.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_extmath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_fast_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_fast_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_fixes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_fixes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_graph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_linear_assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_linear_assignment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_metaestimators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_metaestimators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_multiclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_multiclass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_murmurhash.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_murmurhash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_seq_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_seq_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_sparsefuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_sparsefuncs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_stats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/tests/test_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/weight_vector.cpython-37m-darwin.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/sklearn/utils/weight_vector.cpython-37m-darwin.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_requests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,20 +695,21 @@
     <SUITE FILE_PATH="coverage/Judge$page_show.coverage" NAME="page_show Coverage Results" MODIFIED="1557969716854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$answerprocessing.coverage" NAME="answerprocessing Coverage Results" MODIFIED="1557147497778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$databaseact.coverage" NAME="databaseact Coverage Results" MODIFIED="1557207396915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$main.coverage" NAME="main Coverage Results" MODIFIED="1557979966042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$1.coverage" NAME="1 Coverage Results" MODIFIED="1557658442256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$main.coverage" NAME="main Coverage Results" MODIFIED="1558923571749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$1.coverage" NAME="1 Coverage Results" MODIFIED="1558919055390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlergetcookie.coverage" NAME="webcrawlergetcookie Coverage Results" MODIFIED="1556790587500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$web_requests.coverage" NAME="web_requests Coverage Results" MODIFIED="1557281061319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$nlp_AnswerProcessing.coverage" NAME="nlp_AnswerProcessing Coverage Results" MODIFIED="1558574678208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$web_requests.coverage" NAME="web_requests Coverage Results" MODIFIED="1558574722936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerlogin.coverage" NAME="webcrawlerlogin Coverage Results" MODIFIED="1556794266282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$dataclean.coverage" NAME="dataclean Coverage Results" MODIFIED="1557119292127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerlogin2.coverage" NAME="webcrawlerlogin2 Coverage Results" MODIFIED="1556676177095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$weboptions.coverage" NAME="weboptions Coverage Results" MODIFIED="1556780167206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$showtime.coverage" NAME="showtime Coverage Results" MODIFIED="1557113502359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Judge$webcrawlerrequests.coverage" NAME="webcrawlerrequests Coverage Results" MODIFIED="1557109996648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Judge$data_showtime.coverage" NAME="data_showtime Coverage Results" MODIFIED="1557208085699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Judge$data_showtime.coverage" NAME="data_showtime Coverage Results" MODIFIED="1558919825784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="356" />
+    <option name="myElementSize" value="493" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Judge" />
@@ -53,40 +717,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_show.py">
+        <entry file="file://$PROJECT_DIR$/nlp_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="17" selection-start-line="17" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_showtime.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#13#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/showpage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-299">
-              <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/8b34c4887cf911e9JjHCA4P3.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="48" column="60" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+            <state relative-caret-position="323">
+              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
               <folding>
                 <element signature="e#63#82#0" expanded="true" />
               </folding>
@@ -95,10 +755,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/89592f6a714f11e9sFeCYBR0.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_requests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+            <state relative-caret-position="740">
+              <caret line="91" column="165" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="165" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -107,52 +772,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_databaseact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="149" column="32" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
-              <folding>
-                <element signature="e#13#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/detailpage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="570">
               <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mainwindow.py">
+        <entry file="file://$PROJECT_DIR$/nlp_dataclean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3540">
-              <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_showtime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+            <state relative-caret-position="196">
+              <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
               <folding>
-                <element signature="e#13#44#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page_show.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nlp_AnswerProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
+            <state relative-caret-position="-343">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
                 <element signature="e#13#25#0" expanded="true" />
               </folding>
@@ -171,8 +827,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>time.sleep</find>
-      <find>auto</find>
       <find>clear</find>
       <find>pageload</find>
       <find>deleteq</find>
@@ -201,6 +855,8 @@
       <find>loadPicture</find>
       <find>dbsigna</find>
       <find>reloadCombobox</find>
+      <find>change</find>
+      <find>loadBY</find>
     </findStrings>
     <replaceStrings>
       <replace>html</replace>
@@ -242,16 +898,17 @@
         <option value="$PROJECT_DIR$/showwindow.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/web_login.py" />
-        <option value="$PROJECT_DIR$/nlp_AnswerProcessing.py" />
         <option value="$PROJECT_DIR$/1.txt" />
         <option value="$PROJECT_DIR$/detailpage.py" />
-        <option value="$PROJECT_DIR$/nlp_dataclean.py" />
-        <option value="$PROJECT_DIR$/web_requests.py" />
         <option value="$PROJECT_DIR$/nlpfiles/CNENstopwords.txt" />
         <option value="$PROJECT_DIR$/Mainwindow.py" />
-        <option value="$PROJECT_DIR$/1.py" />
+        <option value="$PROJECT_DIR$/web_requests.py" />
+        <option value="$PROJECT_DIR$/1.python" />
         <option value="$PROJECT_DIR$/data_databaseact.py" />
+        <option value="$PROJECT_DIR$/nlp_AnswerProcessing.py" />
+        <option value="$PROJECT_DIR$/1.py" />
         <option value="$PROJECT_DIR$/data_showtime.py" />
+        <option value="$PROJECT_DIR$/nlp_dataclean.py" />
         <option value="$PROJECT_DIR$/page_main.py" />
         <option value="$PROJECT_DIR$/page_show.py" />
       </list>
@@ -283,17 +940,17 @@
             <path>
               <item name="Judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="Judge" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Judge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Judge" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Judge" type="b2602c69:ProjectViewProjectNode" />
               <item name="Judge" type="462c0819:PsiDirectoryNode" />
               <item name="nlpfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Judge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Judge" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,7 +963,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
@@ -398,7 +1055,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="page_show" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="nlp_AnswerProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Judge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -411,7 +1068,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/page_show.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nlp_AnswerProcessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -445,10 +1102,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.page_show" />
+        <item itemvalue="Python.data_showtime" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.web_requests" />
-        <item itemvalue="Python.data_showtime" />
+        <item itemvalue="Python.nlp_AnswerProcessing" />
       </list>
     </recent_temporary>
   </component>
@@ -487,11 +1144,14 @@
       <workItem from="1557565179800" duration="1457000" />
       <workItem from="1557642388825" duration="7953000" />
       <workItem from="1557968974992" duration="9726000" />
+      <workItem from="1558515486516" duration="2425000" />
+      <workItem from="1558571931890" duration="7532000" />
+      <workItem from="1558917251406" duration="5063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258979000" />
+    <option name="totallyTimeSpent" value="273999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,14 +1164,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="971" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.19595315" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.2087327" />
       <window_info id="Structure" order="1" sideWeight="0.5008518" side_tool="true" weight="0.25239617" />
       <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.2539936" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32992035" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992035" />
-      <window_info anchor="bottom" x="-43" y="704" width="937" height="236" id="Run" order="2" sideWeight="0.48668796" weight="0.22525597" />
+      <window_info anchor="bottom" x="-43" y="704" width="937" height="236" id="Run" order="2" sideWeight="0.48668796" weight="0.33105803" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49254525" weight="0.3993174" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,7 +1181,8 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840257" weight="0.32992035" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8567625" weight="0.32992035" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.51331204" side_tool="true" visible="true" weight="0.22525597" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.51331204" side_tool="true" weight="0.22525597" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32992035" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -574,15 +1235,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/8992bb78708b11e9JgunRv3W.png" />
-    <entry file="file://$PROJECT_DIR$/images/7623e4c2708b11e9KNYDjGfo.png" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4815">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10605">
@@ -615,60 +1267,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/f2a95358713811e9bYdf3DBT.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/f2a95358713811e9bYdf3DBT.png" />
     <entry file="file://$PROJECT_DIR$/images/fdd4868c714011e9W7vxD4qj.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/9e73afbe714611e9c1N5dlSm.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/f2dc2c06713811e9R9sw5yWP.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/9e73afbe714611e9c1N5dlSm.png" />
+    <entry file="file://$PROJECT_DIR$/images/f2dc2c06713811e9R9sw5yWP.png" />
     <entry file="file://$PROJECT_DIR$/images/ea0d5eb6714111e9VIi82hxE.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/e9da4206714111e9hzMk47td.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/cf6914f6713711e97I184ZBP.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/aa673ce2713611e9Kluynq5z.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/aa9d3716713611e96e9rw3U4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/cf6914f6713711e97I184ZBP.png" />
+    <entry file="file://$PROJECT_DIR$/images/aa673ce2713611e9Kluynq5z.png" />
+    <entry file="file://$PROJECT_DIR$/images/aa9d3716713611e96e9rw3U4.png" />
     <entry file="file://$PROJECT_DIR$/images/fda281dc714011e9hFxCu631.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/898cd8b0714f11e9Mph5AQg7.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/89592f6a714f11e9sFeCYBR0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/9ea7d316714611e9DvF5K4ne.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/9ea7d316714611e9DvF5K4ne.png" />
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="64" selection-start-line="64" selection-end-line="75" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/standardAnswer.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -677,111 +1299,146 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/3b3b6c80713611e9IJWXCYvQ.png" />
+    <entry file="file://$PROJECT_DIR$/images/3b7279dc713611e92IHFy5RD.png" />
+    <entry file="file://$PROJECT_DIR$/cachefiles/moocCookies.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cachefiles/answers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret column="3732" lean-forward="true" selection-start-column="3732" selection-end-column="3732" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="7" selection-end-line="41" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="25" column="85" selection-end-line="44" selection-end-column="24" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_tfidf.py">
+    <entry file="file://$PROJECT_DIR$/web_options.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" selection-start-line="5" selection-end-line="15" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_dataclean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="43" column="15" lean-forward="true" selection-start-line="3" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cachefiles/moocCookies.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cachefiles/answers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="561" selection-start-column="1" selection-end-column="1066" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mainwindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3540">
-          <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/3b3b6c80713611e9IJWXCYvQ.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/3b7279dc713611e92IHFy5RD.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_databaseact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="149" column="32" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
+        <state relative-caret-position="544">
+          <caret line="219" column="26" selection-start-line="219" selection-start-column="26" selection-end-line="219" selection-end-column="26" />
           <folding>
             <element signature="e#13#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_requests.py">
+    <entry file="file://$PROJECT_DIR$/Mainwindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="821">
+          <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="34" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1.python">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="698" selection-start-line="6" selection-start-column="698" selection-end-line="6" selection-end-column="698" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/89592f6a714f11e9sFeCYBR0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detailpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/8b34c4887cf911e9JjHCA4P3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/244e41a0801d11e9O03rLYSb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_showtime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+        <state relative-caret-position="526">
+          <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
           <folding>
             <element signature="e#13#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detailpage.py">
+    <entry file="file://$PROJECT_DIR$/nlp_AnswerProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        <state relative-caret-position="-343">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#13#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/showpage.py">
+    <entry file="file://$PROJECT_DIR$/nlp_dataclean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="50" column="70" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="196">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="91" column="165" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="165" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="48" column="60" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+        <state relative-caret-position="323">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
           <folding>
             <element signature="e#63#82#0" expanded="true" />
           </folding>
@@ -790,20 +1447,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_show.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="543">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_AnswerProcessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
-          <folding>
-            <element signature="e#13#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

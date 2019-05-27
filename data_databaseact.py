@@ -110,15 +110,9 @@ def createQuestion(title, detail, wordcloudpath, numbercountpath):
 #自动创建问题及成绩表
 def autocreateQuestion(title, detail, wordcloudpath, numbercountpath, scoresdict):
     try:
-        print('================================')
-        print('开始写入数据库..........')
-        print('  + 创建问题详情.....')
         questionid = createQuestion(title, detail, wordcloudpath, numbercountpath)
-        print('  + 创建成绩表.....')
         createTable(tablename(questionid))
-        print('  + 插入成绩.....')
         insertScore(tablename(questionid), scoresdict)
-        print('  + 数据库存储完成！')
         return questionid
     except Exception as e:
         print('XXXXXXXXXXXXXXXXXXXXXXXXXXXX')

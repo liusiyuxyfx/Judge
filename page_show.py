@@ -93,7 +93,11 @@ class childWindow(QDialog, Ui_Dialog_showpage):
         print('Combobox Text changed')
         self.questionid = self.comboBox.currentData()
         print(self.questionid)
+        self.close()
+        self.tableWidget.hide()
         self.pageload(self.questionid)
+        self.tableWidget.show()
+        self.show()
 
     #根据学生姓名查询
     def searchStudentByName(self):
