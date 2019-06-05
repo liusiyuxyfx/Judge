@@ -14,7 +14,7 @@ Related libraries:
 * Webcrawler   
 selenium, chromedriver, requests, urllib3
 * NLP  
-scikit-learn
+scikit-learn, jieba
 * Data-clean  
 re
 * Painting  
@@ -22,5 +22,8 @@ wordcloud(only for Mac and Linux), matplotlib
 * UI  
 pyqt
 * Database  
-pymysql
+pymysql   
 Database: Mysql 8.0  
+
+### Entrance
+page_main.py - main()
