@@ -28,3 +28,19 @@ Database: Mysql 8.0
 
 ### Entrance
 page_main.py - main()
+
+### SQL script
+table *questioninfo* in diagram *studentscore* . 
+
+```
+create table questioninfo
+(
+    id          varchar(64)  not null
+        primary key,
+    title       varchar(200) null,
+    detail      text         null,
+    wordcloud   varchar(64)  null,
+    numbercount varchar(64)  null
+);
+```
+
