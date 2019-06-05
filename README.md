@@ -22,7 +22,8 @@ wordcloud(only for Mac and Linux), matplotlib
 * UI  
 pyqt
 * Database  
-pymysql   
+pymysql    
+
 Database: Mysql 8.0  
 
 ### Entrance
